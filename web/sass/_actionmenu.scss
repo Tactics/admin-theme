@@ -1,0 +1,38 @@
+div.actionsmenu {
+  border-color: #C3C3C3;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 9px;
+  font-size: 11px;
+  right: 9px;
+  box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
+  border: none;
+
+  h1 {
+    border: none;
+    margin-left: -9px;
+    margin-right: -9px;
+    padding-left: 9px;
+    padding-right: 9px;
+    color: #767676;
+    font-weight: normal;
+
+  }
+  h1:not(:first-of-type) {
+    border-top: 1px solid #C3C3C3;
+    padding-top: 9px;
+    margin-top: 9px;
+  }
+
+  div.menuitem {
+    margin-left: 0;
+    margin-bottom: 2px;
+    padding-left: 17px;
+    position: relative;
+    i {
+      position: absolute;
+      left: 0;
+
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "sass": "^1.15.2"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "sass-compile": "sass web/sass/style.scss web/css/style.css",
+    "sass-watch": "sass --watch web/sass/style.scss web/css/style.css"
+  }
+}

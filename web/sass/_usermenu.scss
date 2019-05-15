@@ -1,0 +1,60 @@
+.user-menu {
+  position: relative;
+
+  &--closed {
+    .user-menu__links {
+      display: none;
+    }
+  }
+
+  &:after {
+    content : "\f0d7";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 40px;
+    top: 12px;
+  }
+
+  &__toggler {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C3C3C3;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+
+  &__links {
+    border: 1px solid #C3C3C3;
+    border-radius: 5px;
+    padding: 7px;
+    width: 150px;
+    margin-top: 5px;
+    font-size: 11px;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+    }
+    li:not(:last-of-type) {
+      margin-bottom: 2px;
+    }
+  }
+
+  &__status {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    left: 24px;
+
+    &--archived {
+      background-color: orange;
+    }
+  }
+}

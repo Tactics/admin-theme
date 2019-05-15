@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+.new-ui {
+
+  font-family: 'Lato', sans-serif !important;
+  body, td, p {
+    font-family: 'Lato', sans-serif !important;
+    color: #102A43 !important;
+  }
+
+  body {
+    background-color: initial !important;
+    padding: 0 !important;
+  }
+
+  .object_updated_at, .object_updated_at a {
+    color: #767676;
+  }
+
+  color: #102A43 !important;
+  $background-color: #F0F4F8;
+
+  $link-color: #486581;
+  $link-color--hover: #102A43;
+
+  $primary-color: #65D6AD;
+  $primary-color-shadow: rgba(25,148,115,0.30);
+
+  $secondary-color: #C4C6FF;
+
+  $danger-color: #FFBDBD;
+  $danger-color-shadow: rgba(255,53,61,0.30);
+
+  $default-button-color: #D9E2EC;
+
+  background-color: $background-color !important;
+
+  a {
+    color: $link-color;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $link-color--hover;
+  }
+
+  @import "dashboardmenu";
+
+  @import "pageblock";
+
+  @import "forms";
+
+  @import "actionmenu";
+
+  @import "breadcrumb";
+
+  @import "globalsearch";
+
+  @import "usermenu";
+
+  @import "loader";
+
+  @import "autocomplete";
+
+}

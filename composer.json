@@ -1,0 +1,16 @@
+{
+  "name": "tactics/admin-theme",
+  "type": "symfony1-plugin",
+  "description": "A new style for our old admin applications.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Benjamin Boutmans",
+      "email": "benjamin@tactics.be"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}

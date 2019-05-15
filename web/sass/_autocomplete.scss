@@ -1,0 +1,18 @@
+.tt-autocomplete {
+  > div {
+    border-radius: 5px;
+    border: 1px solid #C3C3C3 !important;
+
+    input[type="text"] {
+      padding: 7px 9px !important;
+    }
+
+    > div {
+      background-color: #f6F6F6 !important;
+      height: initial !important;
+      padding: 7px 9px !important;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}

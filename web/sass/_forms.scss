@@ -1,0 +1,103 @@
+button, input[type="submit"], input[type="button"] {
+  padding: 7px 9px;
+  border:none;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+}
+
+input[type="radio"] {
+  margin-top: 9px;
+}
+
+button, input[type="button"] {
+  //background-color: #F0F0F0;
+  background-color: $default-button-color;
+
+  &:hover {
+    background-color: darken($default-button-color, 10%);
+  }
+}
+
+input[type="submit"] {
+  color: #fff;
+  color: #014D40;
+  background-color: $primary-color;
+  //box-shadow: $primary-color-shadow 0 7px 22px;
+  box-shadow: $primary-color-shadow 0 4px 7px;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.btn-secondary {
+  color: #0C008C;
+  $secondary-btn-color: #C4C6FF;
+  background-color: $secondary-btn-color !important;
+
+
+  &:hover {
+    background-color: darken($secondary-btn-color, 5%) !important;
+  }
+}
+
+.btn-danger {
+  color: #610316;
+  background-color: $danger-color !important;
+  //box-shadow: $danger-color-shadow 0 7px 22px;
+  box-shadow: $danger-color-shadow 0 4px 7px;
+
+  &:hover {
+    background-color: darken($danger-color, 5%) !important;
+  }
+}
+
+.btn-link {
+  background-color: initial !important;
+  color: $link-color;
+
+  &:hover {
+    color: $link-color--hover;
+    background-color: initial !important;
+  }
+}
+
+table.formtable {
+  th {
+    line-height: 27px;
+    padding-top: 3px;
+  }
+}
+
+input, textarea, select {
+  border: 1px solid #C3C3C3;
+  border-radius: 5px;
+  padding: 7px 9px;
+
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: border;
+  transition-property: border;
+}
+
+select {
+  padding: 6px 9px;
+}
+
+input:focus, textarea:focus, select:focus {
+  border: 1px solid #000;
+  background-color: initial;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 5px;
+}
