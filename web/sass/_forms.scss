@@ -16,7 +16,6 @@ input[type="radio"] {
 }
 
 button, input[type="button"] {
-  //background-color: #F0F0F0;
   background-color: $default-button-color;
 
   &:hover {
@@ -25,10 +24,8 @@ button, input[type="button"] {
 }
 
 input[type="submit"] {
-  color: #fff;
   color: #014D40;
   background-color: $primary-color;
-  //box-shadow: $primary-color-shadow 0 7px 22px;
   box-shadow: $primary-color-shadow 0 4px 7px;
 
   &:hover {
@@ -50,7 +47,6 @@ input[type="submit"] {
 .btn-danger {
   color: #610316;
   background-color: $danger-color !important;
-  //box-shadow: $danger-color-shadow 0 7px 22px;
   box-shadow: $danger-color-shadow 0 4px 7px;
 
   &:hover {
