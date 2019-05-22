@@ -97,3 +97,8 @@ select {
   appearance: none;
   padding-left: 5px;
 }
+
+// SearchImage op zoekknop
+button.searchImage, input[type="button"].searchImage, input[type="submit"].searchImage {
+  background-image: none;
+}
