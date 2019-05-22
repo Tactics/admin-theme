@@ -142,6 +142,9 @@
   appearance: none;
   padding-left: 5px;
 }
+.new-ui button.searchImage, .new-ui input[type=button].searchImage, .new-ui input[type=submit].searchImage {
+  background-image: none;
+}
 .new-ui div.actionsmenu {
   background-color: #fff;
   border-radius: 5px;
@@ -159,6 +162,7 @@
   padding-right: 9px;
   color: #767676;
   font-weight: normal;
+  width: 100%;
 }
 .new-ui div.actionsmenu h1:not(:first-of-type) {
   border-top: 1px solid #C3C3C3;
@@ -378,6 +382,77 @@
   padding: 7px 9px !important;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.new-ui table.grid {
+  border: none;
+  border-radius: 5px;
+}
+.new-ui table.grid thead tr td {
+  color: #627D98 !important;
+  background-color: #F0F4F8;
+  border: none;
+  padding: 9px !important;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.new-ui table.grid thead tr td div {
+  background-color: initial;
+  border: none;
+  padding: 0;
+  height: auto;
+}
+.new-ui table.grid thead tr td.gesorteerd div {
+  background-color: initial;
+  border: none;
+}
+.new-ui table.grid tbody tr td {
+  padding: 9px;
+  vertical-align: middle;
+}
+.new-ui table.grid tbody tr td > div {
+  line-height: initial;
+  height: auto;
+}
+.new-ui table.grid tbody tr.even td {
+  background-color: #F0F4F8;
+}
+.new-ui table.grid tbody tr:hover td {
+  background-color: #D9E2EC;
+}
+.new-ui table.grid tbody tr:hover td a {
+  color: #486581;
+  background-color: #D9E2EC;
+  text-decoration: none;
+}
+.new-ui div.filter {
+  border-color: #BCCCDC;
+}
+.new-ui div.filter table td {
+  vertical-align: middle;
+}
+.new-ui .opmerking,
+.new-ui .opmerking-alert,
+.new-ui .opmerking-prive,
+.new-ui .opmerking-warning {
+  border: none;
+  border-radius: 5px;
+  padding: 9px;
+}
+.new-ui .opmerking {
+  background-color: #D9E2EC;
+  color: #102A43;
+}
+.new-ui .opmerking-prive {
+  background-color: #E3F8FF;
+  color: #035388;
+}
+.new-ui .opmerking-alert {
+  background-color: #FFE3E3;
+  color: #610316;
+}
+.new-ui .opmerking-warning {
+  background-color: #FFFBEA;
+  color: #8D2B0B;
 }
 
 /*# sourceMappingURL=style.css.map */

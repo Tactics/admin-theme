@@ -1,0 +1,31 @@
+.opmerking,
+.opmerking-alert,
+.opmerking-prive,
+.opmerking-warning {
+  border: none;
+  border-radius: $border-radius;
+  padding: 9px;
+}
+
+.opmerking {
+  background-color: #D9E2EC;
+  color: #102A43;
+}
+
+.opmerking-prive {
+  background-color: #E3F8FF;
+  color: #035388;
+}
+
+.opmerking-alert {
+  background-color: #FFE3E3;
+  color: #610316;
+}
+
+.opmerking-warning {
+  background-color: #FFFBEA;
+  color: #8D2B0B;
+}
+
+
+
