@@ -34,6 +34,15 @@
 
   background-color: $background-color !important;
 
+  $table-head-background-color: $background-color;
+  $table-head-color: #627D98;
+  $table-row-hover-color: #D9E2EC;
+  $table-even-row-background-color: $background-color;
+  $table-filter-border-color: #BCCCDC;
+
+  $border-radius: 5px;
+
+
   a {
     color: $link-color;
   }
@@ -57,5 +66,7 @@
   @import "loader";
 
   @import "autocomplete";
+
+  @import "tables";
 
 }

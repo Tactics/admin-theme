@@ -1,0 +1,72 @@
+table.grid {
+  border: none;
+  border-radius: $border-radius;
+
+  thead {
+    tr {
+      td {
+        color: $table-head-color !important;
+        background-color: $table-head-background-color;
+        border: none;
+        padding: 9px !important;
+        text-transform: uppercase;
+        font-weight: normal;
+
+        div {
+          background-color: initial;
+          border: none;
+          padding: 0;
+          height: auto;
+        }
+      }
+      td.gesorteerd {
+        div {
+          background-color: initial;
+          border: none;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 9px;
+        vertical-align: middle;
+
+        > div {
+          line-height: initial;
+          height: auto;
+        }
+      }
+    }
+
+    tr.even {
+      td {
+        background-color: $table-even-row-background-color;
+      }
+    }
+
+    tr:hover {
+      td {
+        background-color: $table-row-hover-color;
+
+        a {
+          color: $link-color;
+          background-color: $table-row-hover-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+div.filter {
+  border-color: $table-filter-border-color;
+
+  table {
+    td {
+     vertical-align: middle;
+    }
+  }
+}
