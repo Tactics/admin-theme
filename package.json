@@ -7,6 +7,7 @@
   "scripts": {
     "sass-compile": "sass web/sass/style.scss web/css/style.css",
     "sass-watch": "sass --watch web/sass/style.scss web/css/style.css",
-    "move": "cp web/css/style.css ./../../web/adminTheme/css/style.css"
+    "move": "cp web/css/style.css ./../../web/adminTheme/css/style.css",
+    "sass-watch-with-move": "sass --watch web/sass/style.scss ./../../web/adminTheme/css/style.css"
   }
 }
