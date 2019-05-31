@@ -20,7 +20,7 @@
     &:first-of-type {
       a:before {
         content: "\f015";
-        font-family: 'Font Awesome\ 5 Free';
+        font-family: $font-awesome-version;
         font-weight: 900;
         margin-right: 2px;
         line-height: 9px;

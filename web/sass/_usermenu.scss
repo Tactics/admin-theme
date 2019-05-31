@@ -9,7 +9,7 @@
 
   &:after {
     content : "\f0d7";
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: $font-awesome-version;
     font-weight: 900;
     position: absolute;
     left: 40px;
