@@ -8264,16 +8264,31 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
   color: #102A43;
 }
+.new-ui #header {
+  height: 40px;
+}
 .new-ui #header > div {
   display: inline-flex;
 }
 .new-ui #header > h1 {
   padding-left: 40px !important;
+  margin-bottom: 10px;
+  color: #102A43;
+  margin-top: -6px;
+}
+.new-ui #header > h1 .application-header-subtitle {
+  color: #627D98;
+  border-left: 1px solid #627D98;
 }
 .new-ui #header > h1 a img {
   left: 10px !important;
   height: 30px !important;
   width: 30px !important;
+}
+.new-ui #header > h2 {
+  color: #102A43;
+  padding-left: 40px !important;
+  margin-top: -7px;
 }
 .new-ui h2.pageblock {
   border-top-left-radius: 5px;
@@ -8415,6 +8430,9 @@ readers do not read off random characters that represent icons */
   color: #767676;
   font-weight: normal;
   width: 100%;
+}
+.new-ui div.actionsmenu h1:first-of-type {
+  margin-top: 0;
 }
 .new-ui div.actionsmenu h1:not(:first-of-type) {
   border-top: 1px solid #C3C3C3;
@@ -8589,21 +8607,43 @@ readers do not read off random characters that represent icons */
   margin-right: 10px;
 }
 .new-ui .user-menu__links {
-  border: 1px solid #C3C3C3;
+  background-color: #ffffff;
   border-radius: 5px;
   padding: 7px;
-  width: 150px;
+  width: 160px;
   margin-top: 5px;
   font-size: 11px;
   position: absolute;
   right: 0;
+  z-index: 99;
+  box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
 }
 .new-ui .user-menu__links ul {
   list-style-type: none;
   margin: 0;
 }
 .new-ui .user-menu__links li:not(:last-of-type) {
-  margin-bottom: 2px;
+  margin-bottom: 5px;
+}
+.new-ui .user-menu__links li.user-menu__link {
+  position: relative;
+}
+.new-ui .user-menu__links li.user-menu__link a {
+  display: block;
+  margin-left: 15px;
+}
+.new-ui .user-menu__links li.user-menu__link a i {
+  position: absolute;
+  width: 15px;
+  left: 0;
+  top: 1px;
+  text-align: center;
+}
+.new-ui .user-menu__nested-links {
+  margin-top: 5px !important;
+}
+.new-ui .user-menu__nested-links--closed {
+  display: none;
 }
 .new-ui .user-menu__status {
   border-radius: 50%;
