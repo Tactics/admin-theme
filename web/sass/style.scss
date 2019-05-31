@@ -62,6 +62,8 @@ $font-awesome-version: "Font Awesome 5 Pro";
     color: $link-color--hover;
   }
 
+  @import "header";
+
   @import "pageblock";
 
   @import "forms";

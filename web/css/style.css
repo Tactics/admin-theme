@@ -8264,6 +8264,14 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
   color: #102A43;
 }
+.new-ui #header > h1 {
+  padding-left: 40px !important;
+}
+.new-ui #header > h1 a img {
+  left: 10px !important;
+  height: 30px !important;
+  width: 30px !important;
+}
 .new-ui h2.pageblock {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
