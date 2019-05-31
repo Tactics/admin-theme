@@ -8437,7 +8437,7 @@ readers do not read off random characters that represent icons */
 .new-ui div.actionsmenu h1:not(:first-of-type) {
   border-top: 1px solid #C3C3C3;
   padding-top: 9px;
-  margin-top: 9px;
+  margin-top: 0;
 }
 .new-ui div.actionsmenu div.menuitem {
   margin-left: 0;
