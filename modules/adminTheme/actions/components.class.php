@@ -14,4 +14,16 @@ class AdminThemeComponents extends sfComponents
 
     }//end executeGlobalSearch()
 
+    /**
+     * Create a user menu
+     *
+     * @return null
+     */
+    public function executeUserMenu()
+    {
+        $this->actions = isset($this->actions) ? $this->actions : [];
+        $this->languages = isset($this->languages) ? $this->languages : [];
+
+    }//end executeUserMenu()
+
 }//end class

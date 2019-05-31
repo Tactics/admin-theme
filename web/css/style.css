@@ -8264,6 +8264,9 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
   color: #102A43;
 }
+.new-ui #header > div {
+  display: inline-flex;
+}
 .new-ui #header > h1 {
   padding-left: 40px !important;
 }
@@ -8437,7 +8440,7 @@ readers do not read off random characters that represent icons */
 .new-ui .breadcrumb li {
   float: left;
   margin: 0 2em 0 0;
-  padding: 7px 9px;
+  padding: 9px 9px;
   visibility: visible;
   text-decoration: none;
   color: #444;
@@ -8514,8 +8517,12 @@ readers do not read off random characters that represent icons */
 .new-ui .breadcrumb li:nth-of-type(10) {
   z-index: 0;
 }
+.new-ui .global-search {
+  margin-right: 9px;
+}
 .new-ui .global-search form {
   border-radius: 5px;
+  background-color: #ffffff;
   display: inline-flex;
   flex-direction: row;
 }
@@ -8526,10 +8533,9 @@ readers do not read off random characters that represent icons */
 .new-ui .global-search__select-container select {
   width: 150px;
   border: none;
-  padding-right: 20px;
-  padding-left: 5px;
   text-overflow: ellipsis;
-  border-radius: 0;
+  border-radius: 5px 0 0 5px;
+  padding: 7px 20px 7px 5px;
 }
 .new-ui .global-search__select-container select option {
   padding: 0;
@@ -8555,7 +8561,7 @@ readers do not read off random characters that represent icons */
   margin: 0;
   background-color: #fff;
   height: 30px;
-  border-radius: 0;
+  border-radius: 0 5px 5px 0;
 }
 .new-ui .user-menu {
   position: relative;
@@ -8589,6 +8595,8 @@ readers do not read off random characters that represent icons */
   width: 150px;
   margin-top: 5px;
   font-size: 11px;
+  position: absolute;
+  right: 0;
 }
 .new-ui .user-menu__links ul {
   list-style-type: none;

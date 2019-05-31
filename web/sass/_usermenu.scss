@@ -29,19 +29,46 @@
   }
 
   &__links {
-    border: 1px solid #C3C3C3;
+    background-color: #ffffff;
     border-radius: 5px;
     padding: 7px;
-    width: 150px;
+    width: 160px;
     margin-top: 5px;
     font-size: 11px;
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
 
     ul {
       list-style-type: none;
       margin: 0;
     }
     li:not(:last-of-type) {
-      margin-bottom: 2px;
+      margin-bottom: 5px;
+    }
+
+    li.user-menu__link {
+      position: relative;
+      a {
+        display: block;
+        margin-left: 15px;
+        i {
+          position: absolute;
+          width: 15px;
+          left: 0;
+          top: 1px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &__nested-links {
+    margin-top: 5px !important;
+
+    &--closed {
+      display: none;
     }
   }
 
