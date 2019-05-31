@@ -4,7 +4,6 @@ h2.pageblock {
   padding: 9px;
   background-color: #fff;
   z-index: 10;
-  position: relative;
   color: #0C008C;
   font-weight: 400;
   font-size: 13px;
@@ -12,6 +11,9 @@ h2.pageblock {
 
   border: none;
   box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
+
+  margin-left: 10px;
+  margin-right: 10px;
 
 
   .actionicon {
@@ -39,6 +41,8 @@ div.pageblock {
   box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
 
   margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 
 }
 

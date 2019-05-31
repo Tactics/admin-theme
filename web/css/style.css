@@ -8257,6 +8257,9 @@ readers do not read off random characters that represent icons */
 .new-ui .object_updated_at, .new-ui .object_updated_at a {
   color: #767676;
 }
+.new-ui table {
+  border-collapse: collapse;
+}
 .new-ui a {
   color: #486581;
 }
@@ -8266,6 +8269,7 @@ readers do not read off random characters that represent icons */
 }
 .new-ui #header {
   height: 40px;
+  margin-left: 10px;
 }
 .new-ui #header > div {
   display: inline-flex;
@@ -8281,7 +8285,7 @@ readers do not read off random characters that represent icons */
   border-left: 1px solid #627D98;
 }
 .new-ui #header > h1 a img {
-  left: 10px !important;
+  left: 20px !important;
   height: 30px !important;
   width: 30px !important;
 }
@@ -8296,13 +8300,14 @@ readers do not read off random characters that represent icons */
   padding: 9px;
   background-color: #fff;
   z-index: 10;
-  position: relative;
   color: #0C008C;
   font-weight: 400;
   font-size: 13px;
   line-height: 13px;
   border: none;
   box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .new-ui h2.pageblock .actionicon {
   margin-top: initial;
@@ -8323,6 +8328,8 @@ readers do not read off random characters that represent icons */
   border-right: none;
   box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
   margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .new-ui table.objectdetails td {
   font-size: 12px;
@@ -8454,6 +8461,7 @@ readers do not read off random characters that represent icons */
   width: 100%;
   border-bottom: none;
   margin-bottom: 9px;
+  margin-left: 10px;
 }
 .new-ui .breadcrumb li {
   float: left;
@@ -8736,6 +8744,9 @@ readers do not read off random characters that represent icons */
   border: none;
   border-radius: 5px;
   padding: 9px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
 }
 .new-ui .opmerking {
   background-color: #D9E2EC;
