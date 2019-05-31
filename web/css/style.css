@@ -8339,6 +8339,14 @@ readers do not read off random characters that represent icons */
   color: #BCCCDC;
   vertical-align: top;
 }
+.new-ui .pageblock-title-icon {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 5px;
+}
 .new-ui button, .new-ui input[type=submit], .new-ui input[type=button] {
   padding: 7px 9px;
   border: none;
