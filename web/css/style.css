@@ -8515,7 +8515,6 @@ readers do not read off random characters that represent icons */
   z-index: 0;
 }
 .new-ui .global-search form {
-  border: 1px solid #C3C3C3;
   border-radius: 5px;
   display: inline-flex;
   flex-direction: row;
@@ -8530,6 +8529,7 @@ readers do not read off random characters that represent icons */
   padding-right: 20px;
   padding-left: 5px;
   text-overflow: ellipsis;
+  border-radius: 0;
 }
 .new-ui .global-search__select-container select option {
   padding: 0;
@@ -8549,11 +8549,13 @@ readers do not read off random characters that represent icons */
   margin-top: 1px;
   border: none;
   padding-right: 0;
+  border-radius: 0;
 }
 .new-ui .global-search__submit-container button {
   margin: 0;
   background-color: #fff;
   height: 30px;
+  border-radius: 0;
 }
 .new-ui .user-menu {
   position: relative;
