@@ -8267,6 +8267,9 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
   color: #102A43;
 }
+.new-ui .disabled {
+  color: #BCCCDC;
+}
 .new-ui #header {
   height: 40px;
   margin-left: 10px;
@@ -8309,11 +8312,13 @@ readers do not read off random characters that represent icons */
   margin-left: 10px;
   margin-right: 10px;
 }
-.new-ui h2.pageblock a.actionicon {
+.new-ui h2.pageblock a.actionicon,
+.new-ui h2.pageblock i.actionicon {
   margin-left: 5px;
 }
 .new-ui h2.pageblock .actionicon {
   margin-top: initial;
+  padding-right: 0;
 }
 .new-ui h2.pageblock .actionicon a {
   margin-left: 5px;

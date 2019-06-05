@@ -66,6 +66,10 @@ $font-awesome-version: "Font Awesome 5 Pro";
     color: $link-color--hover;
   }
 
+  .disabled {
+    color: #BCCCDC;
+  }
+
   @import "header";
 
   @import "pageblock";
