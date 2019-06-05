@@ -5,6 +5,7 @@
 
     input[type="text"] {
       padding: 7px 9px !important;
+      width: calc(100% - 18px) !important;
     }
 
     > div {

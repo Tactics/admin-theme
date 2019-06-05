@@ -8364,6 +8364,7 @@ readers do not read off random characters that represent icons */
   border-radius: 5px;
   margin-left: 5px;
   margin-right: 5px;
+  cursor: pointer;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: background-color;
@@ -8705,6 +8706,7 @@ readers do not read off random characters that represent icons */
 }
 .new-ui .tt-autocomplete > div input[type=text] {
   padding: 7px 9px !important;
+  width: calc(100% - 18px) !important;
 }
 .new-ui .tt-autocomplete > div > div {
   background-color: #f6F6F6 !important;
