@@ -25,7 +25,7 @@
             <?php
             if ($sf_user->isSuperAdmin())
             {
-                echo '<li class="user-menu__link"><a href="#" class="change-user">' . __('Aanmelden als...') . '</a></li>';
+                echo '<li class="user-menu__link"><a href="#" class="change-user"><i class="fal fa-user-secret"></i> ' . __('Aanmelden als...') . '</a></li>';
             }
             ?>
 
