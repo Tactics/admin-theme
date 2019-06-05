@@ -1,4 +1,5 @@
-button, input[type="submit"], input[type="button"] {
+button, input[type="submit"], input[type="button"], .button {
+  font-family: 'Lato', sans-serif !important;
   padding: 7px 9px;
   border:none;
   border-radius: 5px;
@@ -10,13 +11,20 @@ button, input[type="submit"], input[type="button"] {
   transition-duration: 0.3s;
   -webkit-transition-property: background-color;
   transition-property: background-color;
+
+  display: inline-block;
+
+  &:hover {
+    padding: 7px 9px;
+    border:none;
+  }
 }
 
 input[type="radio"] {
   margin-top: 9px;
 }
 
-button, input[type="button"] {
+button, input[type="button"], .button {
   background-color: $default-button-color;
 
   &:hover {
@@ -70,12 +78,18 @@ table.formtable {
     line-height: 27px;
     padding-top: 3px;
   }
+
+  input[type="checkbox"] {
+    margin-top: 10px;
+    margin-bottom: 11px;
+  }
 }
 
 input, textarea, select {
   border: 1px solid #C3C3C3;
   border-radius: 5px;
   padding: 7px 9px;
+  margin-bottom: 5px;
 
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
