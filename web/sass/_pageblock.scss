@@ -15,9 +15,16 @@ h2.pageblock {
   margin-left: 10px;
   margin-right: 10px;
 
+  a.actionicon {
+    margin-left: 5px;
+  }
 
   .actionicon {
     margin-top: initial;
+
+    a {
+      margin-left: 5px;
+    }
   }
 
   span {

@@ -8309,8 +8309,14 @@ readers do not read off random characters that represent icons */
   margin-left: 10px;
   margin-right: 10px;
 }
+.new-ui h2.pageblock a.actionicon {
+  margin-left: 5px;
+}
 .new-ui h2.pageblock .actionicon {
   margin-top: initial;
+}
+.new-ui h2.pageblock .actionicon a {
+  margin-left: 5px;
 }
 .new-ui h2.pageblock span {
   font-weight: initial;
@@ -8435,6 +8441,7 @@ readers do not read off random characters that represent icons */
   right: 9px;
   box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
   border: none;
+  margin-left: 10px;
 }
 .new-ui div.actionsmenu h1 {
   border: none;
@@ -8641,12 +8648,15 @@ readers do not read off random characters that represent icons */
 .new-ui .user-menu__links li:not(:last-of-type) {
   margin-bottom: 5px;
 }
+.new-ui .user-menu__links li:first-of-type {
+  margin-bottom: 10px;
+}
 .new-ui .user-menu__links li.user-menu__link {
   position: relative;
 }
 .new-ui .user-menu__links li.user-menu__link a {
   display: block;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .new-ui .user-menu__links li.user-menu__link a i {
   position: absolute;
@@ -8728,7 +8738,8 @@ readers do not read off random characters that represent icons */
   line-height: initial;
   height: auto;
 }
-.new-ui table.grid tbody tr.even td {
+.new-ui table.grid tbody tr.even td,
+.new-ui table.grid tbody tr:nth-child(even) td {
   background-color: #F0F4F8;
 }
 .new-ui table.grid tbody tr:hover td {

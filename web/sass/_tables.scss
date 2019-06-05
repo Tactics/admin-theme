@@ -41,7 +41,8 @@ table.grid {
       }
     }
 
-    tr.even {
+    tr.even,
+    tr:nth-child(even){
       td {
         background-color: $table-even-row-background-color;
       }
