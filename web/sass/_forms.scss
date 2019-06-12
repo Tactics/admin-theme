@@ -5,6 +5,7 @@ button, input[type="submit"], input[type="button"], .button {
   border-radius: 5px;
   margin-right: 5px;
   cursor: pointer;
+  color: #1F2933;
 
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -16,6 +17,7 @@ button, input[type="submit"], input[type="button"], .button {
   &:hover {
     padding: 7px 9px;
     border:none;
+    color: #1F2933;
   }
 }
 
