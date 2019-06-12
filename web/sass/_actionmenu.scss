@@ -30,13 +30,26 @@ div.actionsmenu {
 
   div.menuitem {
     margin-left: 0;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
     padding-left: 17px;
     position: relative;
+    height: 14px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+
+    a {
+      width: 90%;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
     i {
       position: absolute;
       left: 0;
-
     }
   }
 }

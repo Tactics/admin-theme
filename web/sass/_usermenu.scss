@@ -1,5 +1,6 @@
 .user-menu {
   position: relative;
+  color: #F5F7FA;
 
   &--closed {
     .user-menu__links {
@@ -29,6 +30,7 @@
   }
 
   &__links {
+    color: #1F2933;
     background-color: #ffffff;
     border-radius: 5px;
     padding: 7px;
@@ -71,6 +73,10 @@
 
     &--closed {
       display: none;
+    }
+
+    li.user-menu__link {
+      margin-bottom: 5px;
     }
   }
 

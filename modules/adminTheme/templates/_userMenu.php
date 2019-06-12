@@ -10,9 +10,9 @@
     <div class="user-menu__links">
         <ul>
             <li>
-                <?php echo __('U bent ingelogd als');?>:<br> <?php echo link_to_if($sf_user->controleerToegangTotPersoon($sf_user->getPersoon()), $sf_user->getPersoon()->getNaam(), 'persoon/show?id=' . $sf_user->getPersoon()->getId(), array('style' => "font-weight:bold;color: #072655;")); ?>
+                <?php echo __('U bent ingelogd als');?>:<br> <?php echo link_to_if($sf_user->controleerToegangTotPersoon($sf_user->getPersoon()), $sf_user->getPersoon()->getNaam(), 'persoon/show?id=' . $sf_user->getPersoon()->getId(), array('style' => "font-weight:bold;")); ?>
                 <?php if ($sf_user->getSecurityLevel()) : ?>
-                    <span style='color:#BB0000;'>[<?php echo strToUpper($sf_user->getSecurityLevel());?>]</span>
+                    <span style='color:#E12D39;'>[<?php echo strToUpper($sf_user->getSecurityLevel());?>]</span>
                 <?php endif ?>
             </li>
             <?php

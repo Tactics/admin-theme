@@ -35,10 +35,10 @@ button, input[type="button"], .button {
 input[type="submit"] {
   color: #014D40;
   background-color: $primary-color;
-  box-shadow: $primary-color-shadow 0 4px 7px;
+  box-shadow: darken($primary-color-shadow, 5%) 0 4px 7px;
 
   &:hover {
-    background-color: darken($primary-color, 10%);
+    background-color: darken($primary-color, 5%);
   }
 }
 

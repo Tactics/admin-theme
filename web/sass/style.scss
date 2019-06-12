@@ -15,12 +15,25 @@ $font-awesome-version: "Font Awesome 5 Pro";
   font-family: 'Lato', sans-serif !important;
   body, td, p {
     font-family: 'Lato', sans-serif !important;
-    color: #102A43 !important;
+    color: #1F2933 !important;
     background: none;
   }
 
   body {
     background-color: initial !important;
+  }
+
+  body::before {
+    height: 40px;
+    display: block;
+    background-image: linear-gradient(to bottom right, #35469C, #2D3A8C);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    box-shadow: rgba(29, 29, 31, 0.2) 0 1px 5px;
   }
 
   .object_updated_at, .object_updated_at a {
@@ -31,27 +44,27 @@ $font-awesome-version: "Font Awesome 5 Pro";
     border-collapse: collapse;
   }
 
-  color: #102A43 !important;
-  $background-color: #F0F4F8;
+  color: #1F2933 !important;
+  $background-color: #F5F7FA;
 
-  $link-color: #486581;
-  $link-color--hover: #102A43;
+  $link-color: #099AA4;
+  $link-color--hover: #05606E;
 
-  $primary-color: #65D6AD;
-  $primary-color-shadow: rgba(25,148,115,0.30);
+  $primary-color: #1CD4D4;
+  $primary-color-shadow: rgba(58,231,225,0.30);
 
   $secondary-color: #C4C6FF;
 
   $danger-color: #FFBDBD;
   $danger-color-shadow: rgba(255,53,61,0.30);
 
-  $default-button-color: #D9E2EC;
+  $default-button-color: #E4E7EB;
 
   background-color: $background-color !important;
 
   $table-head-background-color: $background-color;
-  $table-head-color: #627D98;
-  $table-row-hover-color: #D9E2EC;
+  $table-head-color: #7B8794;
+  $table-row-hover-color: #E4E7EB;
   $table-even-row-background-color: $background-color;
   $table-filter-border-color: #BCCCDC;
 
@@ -64,6 +77,10 @@ $font-awesome-version: "Font Awesome 5 Pro";
   a:hover {
     text-decoration: none;
     color: $link-color--hover;
+  }
+
+  hr {
+    border-top-color: #9AA5B1;
   }
 
   .disabled {
