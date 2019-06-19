@@ -1,0 +1,10 @@
+div[class^="aanvraag_status_"],
+div[class^="aanvraagkinderdagverblijf_status_"],
+div[class^="status_"],
+div[class^="dossier_status_"],
+div[class^="sociaal_tarief_status_"]
+{
+  border: none !important;
+  border-radius: 5px;
+  padding: 3px !important;
+}
