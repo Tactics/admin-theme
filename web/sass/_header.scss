@@ -1,6 +1,8 @@
 #header {
   height: 45px;
   margin-left:10px;
+  position: fixed;
+  z-index:100;
 
   > div {
     display: inline-flex;
@@ -22,6 +24,7 @@
         left: 20px !important;
         height: 30px !important;
         width: 30px !important;
+        position: fixed !important;
       }
     }
   }

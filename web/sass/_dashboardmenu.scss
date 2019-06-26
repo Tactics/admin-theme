@@ -3,11 +3,12 @@
   border-radius: 5px;
   padding: 9px 9px 41px;
   color: #767676;
-  position: relative;
   box-sizing: border-box;
-  height: calc(100vh - 98px);
+  height: calc(100vh - 68px);
   display: flex;
   flex-flow: column;
+  position: fixed;
+  top: 50px;
 
   background-color: #FFF;
   box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;

@@ -8261,11 +8261,11 @@ readers do not read off random characters that represent icons */
   display: block;
   background-image: linear-gradient(to bottom right, #35469C, #2D3A8C);
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: -1;
+  z-index: 99;
   box-shadow: rgba(29, 29, 31, 0.2) 0 1px 5px;
 }
 .new-ui .object_updated_at, .new-ui .object_updated_at a {
@@ -8287,9 +8287,20 @@ readers do not read off random characters that represent icons */
 .new-ui .disabled {
   color: #BCCCDC;
 }
+.new-ui #content {
+  margin-top: 40px;
+}
+.new-ui #container > .dashboard-menu--open ~ #wrapper > #content {
+  margin-left: 235px;
+}
+.new-ui #container > .dashboard-menu--closed ~ #wrapper > #content {
+  margin-left: 65px;
+}
 .new-ui #header {
   height: 45px;
   margin-left: 10px;
+  position: fixed;
+  z-index: 100;
 }
 .new-ui #header > div {
   display: inline-flex;
@@ -8308,6 +8319,7 @@ readers do not read off random characters that represent icons */
   left: 20px !important;
   height: 30px !important;
   width: 30px !important;
+  position: fixed !important;
 }
 .new-ui #header > h2 {
   color: #BED0F7;
@@ -8862,11 +8874,12 @@ readers do not read off random characters that represent icons */
   border-radius: 5px;
   padding: 9px 9px 41px;
   color: #767676;
-  position: relative;
   box-sizing: border-box;
-  height: calc(100vh - 98px);
+  height: calc(100vh - 68px);
   display: flex;
   flex-flow: column;
+  position: fixed;
+  top: 50px;
   background-color: #FFF;
   box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
   border: none;
@@ -8988,6 +9001,13 @@ readers do not read off random characters that represent icons */
 .new-ui .dashboard-menu__toggle:hover {
   color: #1CD4D4;
   cursor: pointer;
+}
+.new-ui div#footer {
+  padding-left: 10px;
+  padding-top: 0;
+}
+.new-ui div#footer p {
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
