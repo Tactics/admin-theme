@@ -13,10 +13,13 @@ $font-awesome-version: "Font Awesome 5 Pro";
 .new-ui {
 
   font-family: 'Lato', sans-serif !important;
+  padding-bottom: 0;
+
   body, td, p {
     font-family: 'Lato', sans-serif !important;
     color: #1F2933 !important;
     background: none;
+    padding-bottom: 0;
   }
 
   body {
@@ -111,4 +114,5 @@ $font-awesome-version: "Font Awesome 5 Pro";
 
   @import "status";
 
+  @import "dashboardmenu";
 }

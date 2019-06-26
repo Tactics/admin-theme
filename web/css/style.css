@@ -8243,6 +8243,7 @@ readers do not read off random characters that represent icons */
 
 .new-ui {
   font-family: "Lato", sans-serif !important;
+  padding-bottom: 0;
   color: #1F2933 !important;
   background-color: #F5F7FA !important;
 }
@@ -8250,6 +8251,7 @@ readers do not read off random characters that represent icons */
   font-family: "Lato", sans-serif !important;
   color: #1F2933 !important;
   background: none;
+  padding-bottom: 0;
 }
 .new-ui body {
   background-color: initial !important;
@@ -8363,6 +8365,7 @@ readers do not read off random characters that represent icons */
 }
 .new-ui table.objectdetails th {
   font-size: 10px;
+  line-height: 13px;
   color: #CBD2D9;
   vertical-align: top;
 }
@@ -8435,7 +8438,6 @@ readers do not read off random characters that represent icons */
 }
 .new-ui table.formtable th {
   line-height: 27px;
-  padding-top: 3px;
 }
 .new-ui table.formtable input[type=checkbox] {
   margin-top: 10px;
@@ -8608,7 +8610,7 @@ readers do not read off random characters that represent icons */
 }
 .new-ui .global-search form {
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #E0E8F9;
   display: inline-flex;
   flex-direction: row;
 }
@@ -8623,6 +8625,8 @@ readers do not read off random characters that represent icons */
   border-radius: 5px 0 0 5px;
   padding: 7px 20px 7px 5px;
   margin-bottom: 0;
+  background-color: #E0E8F9;
+  color: #2D3A8C;
 }
 .new-ui .global-search__select-container select option {
   padding: 0;
@@ -8634,6 +8638,7 @@ readers do not read off random characters that represent icons */
   position: absolute;
   right: 10px;
   top: 10px;
+  color: #2D3A8C;
 }
 .new-ui .global-search__input-container {
   position: relative;
@@ -8644,16 +8649,22 @@ readers do not read off random characters that represent icons */
   padding-right: 0;
   border-radius: 0;
   margin-bottom: 0;
+  background-color: #E0E8F9;
+  color: #2D3A8C;
+}
+.new-ui .global-search__input-container input::placeholder {
+  color: #647ACB;
 }
 .new-ui .global-search__submit-container button {
   margin: 0;
-  background-color: #fff;
   height: 30px;
   border-radius: 0 5px 5px 0;
+  background-color: #E0E8F9;
+  color: #2D3A8C;
 }
 .new-ui .user-menu {
   position: relative;
-  color: #F5F7FA;
+  color: #E0E8F9;
 }
 .new-ui .user-menu--closed .user-menu__links {
   display: none;
@@ -8837,6 +8848,146 @@ readers do not read off random characters that represent icons */
 .new-ui .opmerking-warning {
   background-color: #FFFBEA;
   color: #8D2B0B;
+}
+.new-ui div[class^=aanvraag_status_],
+.new-ui div[class^=aanvraagkinderdagverblijf_status_],
+.new-ui div[class^=status_],
+.new-ui div[class^=dossier_status_],
+.new-ui div[class^=sociaal_tarief_status_] {
+  border: none !important;
+  border-radius: 5px;
+  padding: 3px !important;
+}
+.new-ui .dashboard-menu {
+  border-radius: 5px;
+  padding: 9px 9px 41px;
+  color: #767676;
+  position: relative;
+  box-sizing: border-box;
+  height: calc(100vh - 98px);
+  display: flex;
+  flex-flow: column;
+  background-color: #FFF;
+  box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
+  border: none;
+}
+.new-ui .dashboard-menu--open {
+  width: 14rem;
+}
+.new-ui .dashboard-menu--closed {
+  width: 3.5rem;
+}
+.new-ui .dashboard-menu--closed .dashboard-menu__filter,
+.new-ui .dashboard-menu--closed .dashboard-menu__title,
+.new-ui .dashboard-menu--closed .dashboard-menu__links {
+  display: none;
+}
+.new-ui .dashboard-menu--closed .dashboard-menu__item {
+  margin-right: auto;
+  margin-left: auto;
+  width: 32px;
+}
+.new-ui .dashboard-menu--closed .dashboard-menu__title-icon {
+  margin-right: 0;
+}
+.new-ui .dashboard-menu--closed .dashboard-menu__toggle {
+  right: 12px;
+}
+.new-ui .dashboard-menu__logo {
+  width: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9px;
+}
+.new-ui .dashboard-menu__logo img {
+  width: 32px;
+}
+.new-ui .dashboard-menu__filter {
+  margin-bottom: 9px;
+}
+.new-ui .dashboard-menu__filter input {
+  width: 100%;
+}
+.new-ui .dashboard-menu__container {
+  overflow: auto;
+  height: 100%;
+}
+.new-ui .dashboard-menu__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.new-ui .dashboard-menu__header:hover {
+  color: #1CD4D4;
+  cursor: pointer;
+}
+.new-ui .dashboard-menu__header:hover .dashboard-menu__title {
+  color: #1CD4D4;
+}
+.new-ui .dashboard-menu__title {
+  font-size: 14px;
+  font-weight: normal;
+  color: #767676;
+  margin-bottom: 0;
+  line-height: 14px;
+  flex: 1;
+}
+.new-ui .dashboard-menu__title:after {
+  content: "";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  margin-left: 5px;
+}
+.new-ui .dashboard-menu__title-icon {
+  font-size: 25px;
+  margin-right: 9px;
+  width: 32px;
+  text-align: center;
+}
+.new-ui .dashboard-menu__links {
+  margin-left: 41px;
+}
+.new-ui .dashboard-menu__links ul {
+  list-style-type: none;
+  margin: 0;
+}
+.new-ui .dashboard-menu__link {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-size: 13px;
+}
+.new-ui .dashboard-menu__link a {
+  color: #767676;
+}
+.new-ui .dashboard-menu__link a:hover {
+  color: #1CD4D4;
+}
+.new-ui .dashboard-menu__item {
+  margin-bottom: 9px;
+}
+.new-ui .dashboard-menu__item:last-of-type {
+  margin-bottom: 0;
+}
+.new-ui .dashboard-menu__item--closed .dashboard-menu__header {
+  margin-bottom: 0;
+}
+.new-ui .dashboard-menu__item--closed .dashboard-menu__links {
+  display: none;
+}
+.new-ui .dashboard-menu__item--closed .dashboard-menu__title:after {
+  content: "";
+}
+.new-ui .dashboard-menu__toggle {
+  width: 32px;
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  bottom: 9px;
+  right: 9px;
+}
+.new-ui .dashboard-menu__toggle:hover {
+  color: #1CD4D4;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

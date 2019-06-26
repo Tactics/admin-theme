@@ -5,7 +5,7 @@
   color: #767676;
   position: relative;
   box-sizing: border-box;
-  height: 100%;
+  height: calc(100vh - 98px);
   display: flex;
   flex-flow: column;
 
@@ -61,12 +61,13 @@
 
   &__container {
     overflow: auto;
+    height: 100%;
   }
 
   &__header {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
 
     &:hover {
       color: $primary-color;
@@ -83,13 +84,14 @@
     font-weight: normal;
     color: #767676;
     margin-bottom: 0;
-    line-height: 28px;
+    line-height: 14px;
     flex: 1;
 
     &:after {
       content: "\f0d8";
       font-family: $font-awesome-version;
       font-weight: 900;
+      margin-left: 5px;
     }
   }
 
