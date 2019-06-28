@@ -33,7 +33,7 @@
             echo "<div class='dashboard-menu__item dashboard-menu__item--closed'>\n";
             echo "<div class='dashboard-menu__header'>";
             echo "<div class='dashboard-menu__title-icon'>";
-            echo "<i class='". $block['icon'] . "'></i>";
+            echo "<i class='". $block['icon'] . "' title=\"" . $block["title"] . "\"></i>";
             echo "</div>";
             echo "<h1 class='dashboard-menu__title'>";
             echo $block['title'];
