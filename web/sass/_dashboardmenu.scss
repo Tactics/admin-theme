@@ -1,3 +1,5 @@
+$dashboard-menu-hover-color: #05606E;
+
 .dashboard-menu {
 
   border-radius: 5px;
@@ -85,11 +87,11 @@
     align-items: center;
 
     &:hover {
-      color: $primary-color;
+      color: $dashboard-menu-hover-color;
       cursor: pointer;
 
       .dashboard-menu__title {
-        color: $primary-color;
+        color: $dashboard-menu-hover-color;
       }
     }
   }
@@ -135,7 +137,7 @@
       color: #767676;
     }
     a:hover {
-      color: $primary-color;
+      color: $dashboard-menu-hover-color;
     }
   }
 
@@ -170,7 +172,7 @@
     right: 9px;
 
     &:hover {
-      color: $primary-color;
+      color: $dashboard-menu-hover-color;
       cursor: pointer;
     }
   }
