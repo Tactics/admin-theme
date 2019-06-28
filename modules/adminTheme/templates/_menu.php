@@ -60,9 +60,30 @@
 <script type="text/javascript">
     jQuery(function($)
     {
-        $('.dashboard-menu__item').click(function(){
-            $(this).toggleClass('dashboard-menu__item--closed');
-            $(this).toggleClass('dashboard-menu__item--open');
-        })
+        $('.dashboard-menu__item').click(function () {
+            let $this = $(this);
+            let $navigation = $this.closest('nav');
+
+            // is Main navigation closed? Open it!
+            if ($navigation.hasClass('dashboard-menu--closed'))
+            {
+                $navigation.removeClass('dashboard-menu--closed');
+                $navigation.addClass('dashboard-menu--open');
+
+                // Open the clicked sub-menu, don't close it if already open.
+                $this.removeClass('dashboard-menu__item--closed');
+                $this.addClass('dashboard-menu__item--open');
+            }
+            else
+            {
+                $this.toggleClass('dashboard-menu__item--closed');
+                $this.toggleClass('dashboard-menu__item--open');
+            }
+        });
+
+        $('.dashboard-menu__toggle').click(function () {
+            $(this).closest('nav').toggleClass('dashboard-menu--closed');
+            $(this).closest('nav').toggleClass('dashboard-menu--open');
+        });
     });
 </script>
