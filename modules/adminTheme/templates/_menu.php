@@ -82,8 +82,18 @@
         });
 
         $('.dashboard-menu__toggle').click(function () {
-            $(this).closest('nav').toggleClass('dashboard-menu--closed');
-            $(this).closest('nav').toggleClass('dashboard-menu--open');
+            let $nav = $(this).closest('nav');
+
+            if ($nav.hasClass('dashboard-menu--open'))
+            {
+                $nav.find('.dashboard-menu__item').each(function () {
+                    $(this).removeClass('dashboard-menu__item--open');
+                    $(this).addClass('dashboard-menu__item--closed');
+                });
+            }
+
+            $nav.toggleClass('dashboard-menu--closed');
+            $nav.toggleClass('dashboard-menu--open');
         });
     });
 </script>
