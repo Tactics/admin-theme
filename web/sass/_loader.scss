@@ -1,9 +1,10 @@
 .ajax-loader {
   width: 0;
   height: 3px;
-  position: absolute;
+  position: fixed;
   top: 40px;
   left: 0;
+  z-index: 100;
 
   &__bar {
     background-color: $primary-color;
