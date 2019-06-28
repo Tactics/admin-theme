@@ -60,8 +60,8 @@
 <script type="text/javascript">
     jQuery(function($)
     {
-        $('.dashboard-menu__item').click(function () {
-            let $this = $(this);
+        $('.dashboard-menu__header').click(function () {
+            let $this = $(this).closest('.dashboard-menu__item');
             let $navigation = $this.closest('nav');
 
             // is Main navigation closed? Open it!
