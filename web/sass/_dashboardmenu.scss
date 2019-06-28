@@ -17,6 +17,14 @@
 
   &--open {
     width: 14rem;
+
+    .dashboard-menu__toggle {
+      &:after {
+        content: '\f100';
+        font-family: $font-awesome-version;
+        font-weight: 300;
+      }
+    }
   }
 
   &--closed {
@@ -38,6 +46,12 @@
     }
     .dashboard-menu__toggle {
       right: 12px;
+
+      &:after {
+        content: '\f101';
+        font-family: $font-awesome-version;
+        font-weight: 300;
+      }
     }
   }
 

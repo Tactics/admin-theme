@@ -26,4 +26,15 @@ class AdminThemeComponents extends sfComponents
 
     }//end executeUserMenu()
 
+    /**
+     * Create a navigation menu
+     *
+     * @return null
+     */
+    public function executeMenu()
+    {
+        $this->menu_config = isset($this->menu_config) ? $this->menu_config : [];
+
+    }//end executeUserMenu()
+
 }//end class
