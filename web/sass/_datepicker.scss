@@ -1,0 +1,29 @@
+.ttdatepicker {
+  position: relative;
+
+  &:after {
+    content: "\f073";
+    font-family: $font-awesome-version;
+    font-weight: 200;
+    font-size: 15px;
+    position: absolute;
+    display: block;
+    right: 4px;
+    top: -3px;
+    z-index: 9;
+    color: #767676;
+  }
+
+  input {
+    padding-right: 18px;
+  }
+
+  img {
+    opacity: 0;
+    z-index: 10;
+    position: absolute;
+    right: 1px;
+    top:-2px;
+
+  }
+}
