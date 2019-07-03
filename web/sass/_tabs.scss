@@ -1,0 +1,50 @@
+.tt-tabpanes {
+  .tt-tabs {
+    border-bottom: none;
+
+    li {
+      background: none;
+      background-color: #F5F7FA;
+      padding: 0;
+      border: 1px solid #C3C3C3;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      top: 0;
+
+      &:not(:first-of-type) {
+        margin-left: -1px !important;
+      }
+
+      &:not(.current):hover {
+        a {
+          color: #1F2933;
+          background-color: darken(#F5F7FA, 10%);
+        }
+      }
+    }
+
+    a {
+      background: none;
+      border: none;
+      padding: 0 9px;
+
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: background-color;
+      transition-property: background-color;
+
+    }
+
+    .current {
+      background-color: #fff;
+      border-bottom: none;
+      padding-bottom: 1px;
+    }
+  }
+
+  > div {
+    padding: 9px;
+    border: 1px solid #C3C3C3;
+
+  }
+}
