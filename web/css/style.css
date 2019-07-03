@@ -8316,7 +8316,7 @@ readers do not read off random characters that represent icons */
   border-left: 1px solid #98AEEB;
 }
 .new-ui #header > h1 a img {
-  left: 20px !important;
+  left: 22px !important;
   height: 30px !important;
   width: 30px !important;
   position: fixed !important;
@@ -8758,11 +8758,12 @@ readers do not read off random characters that represent icons */
   background-color: orange;
 }
 .new-ui .ajax-loader {
-  width: 100%;
+  width: 0;
   height: 3px;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 40px;
   left: 0;
+  z-index: 100;
 }
 .new-ui .ajax-loader__bar {
   background-color: #1CD4D4;
@@ -8887,6 +8888,11 @@ readers do not read off random characters that represent icons */
 .new-ui .dashboard-menu--open {
   width: 14rem;
 }
+.new-ui .dashboard-menu--open .dashboard-menu__toggle:after {
+  content: "";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+}
 .new-ui .dashboard-menu--closed {
   width: 3.5rem;
 }
@@ -8905,6 +8911,11 @@ readers do not read off random characters that represent icons */
 }
 .new-ui .dashboard-menu--closed .dashboard-menu__toggle {
   right: 12px;
+}
+.new-ui .dashboard-menu--closed .dashboard-menu__toggle:after {
+  content: "";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
 }
 .new-ui .dashboard-menu__logo {
   width: 32px;
@@ -8931,11 +8942,11 @@ readers do not read off random characters that represent icons */
   align-items: center;
 }
 .new-ui .dashboard-menu__header:hover {
-  color: #1CD4D4;
+  color: #05606E;
   cursor: pointer;
 }
 .new-ui .dashboard-menu__header:hover .dashboard-menu__title {
-  color: #1CD4D4;
+  color: #05606E;
 }
 .new-ui .dashboard-menu__title {
   font-size: 14px;
@@ -8973,7 +8984,7 @@ readers do not read off random characters that represent icons */
   color: #767676;
 }
 .new-ui .dashboard-menu__link a:hover {
-  color: #1CD4D4;
+  color: #05606E;
 }
 .new-ui .dashboard-menu__item {
   margin-bottom: 9px;
@@ -8999,7 +9010,7 @@ readers do not read off random characters that represent icons */
   right: 9px;
 }
 .new-ui .dashboard-menu__toggle:hover {
-  color: #1CD4D4;
+  color: #05606E;
   cursor: pointer;
 }
 .new-ui div#footer {
@@ -9008,6 +9019,68 @@ readers do not read off random characters that represent icons */
 }
 .new-ui div#footer p {
   border: none;
+}
+.new-ui .tt-tabpanes .tt-tabs {
+  border-bottom: none;
+}
+.new-ui .tt-tabpanes .tt-tabs li {
+  background: none;
+  background-color: #F5F7FA;
+  padding: 0;
+  border: 1px solid #C3C3C3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  top: 0;
+}
+.new-ui .tt-tabpanes .tt-tabs li:not(:first-of-type) {
+  margin-left: -1px !important;
+}
+.new-ui .tt-tabpanes .tt-tabs li:not(.current):hover a {
+  color: #1F2933;
+  background-color: #d3dce9;
+}
+.new-ui .tt-tabpanes .tt-tabs a {
+  background: none;
+  border: none;
+  padding: 0 9px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+}
+.new-ui .tt-tabpanes .tt-tabs .current {
+  background-color: #fff;
+  border-bottom: none;
+  padding-bottom: 1px;
+}
+.new-ui .tt-tabpanes > div {
+  padding: 9px;
+  border: 1px solid #C3C3C3;
+}
+.new-ui .ttdatepicker {
+  position: relative;
+}
+.new-ui .ttdatepicker:after {
+  content: "";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 200;
+  font-size: 15px;
+  position: absolute;
+  display: block;
+  right: 4px;
+  top: -3px;
+  z-index: 9;
+  color: #767676;
+}
+.new-ui .ttdatepicker input {
+  padding-right: 18px;
+}
+.new-ui .ttdatepicker img {
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  right: 1px;
+  top: -2px;
 }
 
 /*# sourceMappingURL=style.css.map */
