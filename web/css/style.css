@@ -9082,5 +9082,70 @@ readers do not read off random characters that represent icons */
   right: 1px;
   top: -2px;
 }
+.new-ui .calendar {
+  border: none;
+  background: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
+  padding: 5px;
+}
+.new-ui .calendar table {
+  background: none;
+  border: none;
+}
+.new-ui .calendar table thead tr {
+  background: none;
+  background-color: #fff;
+}
+.new-ui .calendar table thead .title {
+  background: none;
+}
+.new-ui .calendar table thead .hilite {
+  background: none;
+  background-color: #E1FCF8;
+  cursor: pointer;
+}
+.new-ui .calendar table thead .name {
+  border-color: #C3C3C3;
+}
+.new-ui .calendar table tbody td.selected {
+  border: none;
+  background: none;
+  background-color: #1CD4D4;
+  color: #05606E;
+}
+.new-ui .calendar table tbody td.hilite {
+  border: none;
+  background-color: #E1FCF8;
+  cursor: pointer;
+}
+.new-ui .calendar table tbody .day {
+  text-align: center;
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.new-ui .calendar table tfoot .ttip {
+  background: none;
+  background-color: #fff;
+}
+.new-ui .calendar table .wn {
+  background: none;
+  border-color: #C3C3C3;
+}
+.new-ui .calendar table .rowhilite td {
+  background: none;
+}
+.new-ui .calendar .button {
+  background: none;
+  padding: 2px;
+  border-radius: 0;
+  display: table-cell;
+}
+.new-ui .calendar .nav div {
+  background: none;
+}
 
 /*# sourceMappingURL=style.css.map */

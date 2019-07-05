@@ -27,3 +27,88 @@
 
   }
 }
+
+.calendar {
+  border: none;
+  background: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
+  padding: 5px;
+
+  table {
+    background: none;
+    border: none;
+
+    thead {
+      tr {
+        background: none;
+        background-color: #fff;
+      }
+
+      .title {
+        background: none;
+      }
+
+      .hilite {
+        background: none;
+        background-color: #E1FCF8;
+        cursor: pointer;
+      }
+
+      .name {
+        border-color: #C3C3C3;
+      }
+    }
+
+    tbody {
+      td.selected {
+        border: none;
+        background: none;
+        background-color: #1CD4D4;
+        color: #05606E;
+      }
+
+      td.hilite {
+        border: none;
+        background-color: #E1FCF8;
+        cursor: pointer;
+      }
+
+      .day {
+        text-align: center;
+        padding: 2px;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+    }
+
+    tfoot {
+      .ttip {
+        background: none;
+        background-color: #fff;
+      }
+    }
+
+    .wn {
+      background: none;
+      border-color: #C3C3C3;
+    }
+
+    .rowhilite td {
+      background: none;
+    }
+  }
+
+  .button {
+    background: none;
+    padding: 2px;
+    border-radius: 0;
+    display: table-cell;
+  }
+
+  .nav div {
+    background: none;
+  }
+}
