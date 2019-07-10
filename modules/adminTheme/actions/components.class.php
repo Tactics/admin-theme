@@ -37,4 +37,15 @@ class AdminThemeComponents extends sfComponents
 
     }//end executeUserMenu()
 
+
+    /**
+     * Create a navigation menu
+     *
+     * @return null
+     */
+    public function executeLoader()
+    {
+
+    }//end executeLoader()
+
 }//end class
