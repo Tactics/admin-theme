@@ -8526,7 +8526,7 @@ readers do not read off random characters that represent icons */
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.new-ui div.actionsmenu div.menuitem i {
+.new-ui div.actionsmenu div.menuitem > i {
   position: absolute;
   left: 0;
 }
