@@ -1,0 +1,128 @@
+.loginContainer {
+    border-radius: 5px;
+    padding: 27px;
+    background-color: #fff;
+    z-index: 999;
+    color: #19216C;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    border: none;
+    box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
+    width: 500px;
+    display: flex;
+    margin-bottom: 9px;
+    position: fixed;
+    left: calc(50% - 277px);
+    flex-wrap: wrap;
+    opacity: 0;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-right: 27px;
+
+        img {
+            padding: 16px;
+        }
+    }
+
+    &__form {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 27px;
+
+        border-left: 1px solid #F2F2F2;
+
+        form {
+            width: 100%;
+            margin-top: 18px;
+        }
+
+        &-row {
+            input {
+                width: calc(100% - 20px);
+            }
+            select {
+                width: 100%;
+            }
+        }
+
+    }
+
+    &__installation {
+        margin-bottom: 9px;
+    }
+
+    #submitbtn {
+        width: 100%;
+        margin-top: 9px;
+    }
+
+    .login-eid {
+        margin-top: 18px;
+        font-size: 10px;
+        border-top: 1px solid #F2F2F2;
+        padding-top: 18px;
+
+        .button {
+            width: calc(100% - 18px);
+        }
+    }
+
+    &__footer {
+        flex: 1;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 9px;
+    }
+
+    &__break {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    &-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../images/background.jpg);
+        background-position: center;
+        background-size: cover;
+        z-index: 100;
+    }
+}
+
+.slide-in-top {
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
+}
+
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(+150px);
+        transform: translateY(+150px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(+150px);
+        transform: translateY(+150px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
