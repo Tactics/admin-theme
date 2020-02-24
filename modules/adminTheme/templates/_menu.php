@@ -1,4 +1,8 @@
-<nav class="dashboard-menu dashboard-menu--closed">
+<nav id="dashboard-menu" class="dashboard-menu dashboard-menu--closed">
+
+    <div class="dashboard-menu__filter">
+        <input type="text" name="filter" placeholder="Filter menu">
+    </div>
 
     <div class="dashboard-menu__container">
         <?php
@@ -56,7 +60,8 @@
 
     <div class="dashboard-menu__toggle"></div>
 </nav>
-
+<script src="/adminTheme/js/mousetrap.min.js"></script>
+<script src="/adminTheme/js/mousetrap-global-bind.min.js"></script>
 <script type="text/javascript">
     jQuery(function($)
     {
@@ -82,18 +87,157 @@
         });
 
         $('.dashboard-menu__toggle').click(function () {
-            let $nav = $(this).closest('nav');
+            tacticsMenu.toggle();
+        });
 
-            if ($nav.hasClass('dashboard-menu--open'))
+        var $node = $('#dashboard-menu');
+
+        var tacticsMenu = {
+            show: function(e)
             {
-                $nav.find('.dashboard-menu__item').each(function () {
+                if (e) e.preventDefault();
+
+                $node.removeClass('dashboard-menu--closed');
+                $node.addClass('dashboard-menu--open');
+
+                $node.find('.dashboard-menu__filter input').focus().val('');
+            },
+
+            hide: function(e)
+            {
+                if (e) e.preventDefault();
+
+                $node.find('.dashboard-menu__item').each(function () {
+                    $(this).show();
                     $(this).removeClass('dashboard-menu__item--open');
                     $(this).addClass('dashboard-menu__item--closed');
+                    $(this).find('ul li').show();
+                });
+                $node.find('.dashboard-menu__filter input').val('');
+                $node.addClass('dashboard-menu--closed');
+                $node.removeClass('dashboard-menu--open');
+
+            },
+
+            toggle: function()
+            {
+                if ($node.hasClass('dashboard-menu--open'))
+                {
+                    tacticsMenu.hide();
+                }
+                else
+                {
+                    tacticsMenu.show();
+                }
+            },
+
+            down: function(e)
+            {
+                if ($node.hasClass('dashboard-menu--open'))
+                {
+                    e.preventDefault();
+                }
+
+                var currentFocus = $(':focus');
+                var activeLinks = $node.find('ul li:visible a');
+                var currentIndex = activeLinks.index(currentFocus) + 1;
+                if (currentIndex >= activeLinks.size())
+                {
+                    $node.find('.dashboard-menu__filter input').focus();
+                }
+                else
+                {
+                    activeLinks.get(currentIndex).focus();
+                }
+            },
+
+            up: function(e)
+            {
+                if ($node.hasClass('dashboard-menu--open'))
+                {
+                    e.preventDefault();
+                }
+
+                var currentFocus = $(':focus');
+                var activeLinks = $node.find('ul a:visible');
+                var currentIndex = activeLinks.index(currentFocus) - 1;
+                if (currentIndex < 0)
+                {
+                    $node.find('.dashboard-menu__filter input').focus();
+                }
+                else
+                {
+                    activeLinks.get(currentIndex).focus();
+                }
+            }
+        };
+
+        /*
+        Toggle menu via button or shortcuts
+        */
+        Mousetrap.bind('m', tacticsMenu.show);
+        Mousetrap.bindGlobal('esc', tacticsMenu.hide);
+        Mousetrap.bindGlobal('down', tacticsMenu.down);
+        Mousetrap.bindGlobal('up', tacticsMenu.up);
+
+        $node.find('.dashboard-menu__filter input').keyup(function(){
+            var searchString = $(this).val();
+
+            if (searchString.length)
+            {
+                var tokens = searchString.split(' ');
+                var matchingNodes = $node.find('ul li').hide();
+
+                for(var i in tokens)
+                {
+                    matchingNodes = matchingNodes.filter(':icontains(\'' + tokens[i] + '\')');
+                }
+                matchingNodes.closest('.dashboard-menu__item')
+                    .removeClass('dashboard-menu__item--closed')
+                    .addClass('dashboard-menu__item--open');
+                matchingNodes.show();
+
+                $node.find('.dashboard-menu__item').each(function(){
+                    $(this).show();
+                    if (!$(this).find('ul li:visible').length)
+                    {
+                        $(this).hide();
+                    }
                 });
             }
-
-            $nav.toggleClass('dashboard-menu--closed');
-            $nav.toggleClass('dashboard-menu--open');
+            else
+            {
+                $node.find('.dashboard-menu__item').each(function(){
+                    $(this).removeClass('dashboard-menu__item--closed').addClass('dashboard-menu__item--open').show();
+                    $(this).find('ul li').show();
+                });
+            }
         });
+
     });
+
+    // An implementation of a case-insensitive contains pseudo
+    // made for all versions of jQuery
+    // From: https://github.com/jquery/sizzle/wiki/Sizzle-Documentation
+    (function( $ ) {
+        function icontains( elem, text ) {
+            return (
+                elem.textContent ||
+                elem.innerText ||
+                $( elem ).text() ||
+                ""
+            ).toLowerCase().indexOf( (text || "").toLowerCase() ) > -1;
+        }
+
+        $.expr[':'].icontains = $.expr.createPseudo ?
+            $.expr.createPseudo(function( text ) {
+                return function( elem ) {
+                    return icontains( elem, text );
+                };
+            }) :
+            function( elem, i, match ) {
+                return icontains( elem, match[3] );
+            };
+
+    })( jQuery );
 </script>
