@@ -113,6 +113,11 @@ select {
   padding-left: 5px;
 }
 
+span.toggleableMultipleSelect {
+    display: flex;
+    align-items: center;
+}
+
 // SearchImage op zoekknop
 button.searchImage, input[type="button"].searchImage, input[type="submit"].searchImage {
   background-image: none;
