@@ -20,6 +20,7 @@ $font-awesome-version: "Font Awesome 5 Pro";
     color: #1F2933 !important;
     background: none;
     padding-bottom: 0;
+    font-size: 11px;
   }
 
   body {
@@ -95,7 +96,7 @@ $font-awesome-version: "Font Awesome 5 Pro";
   }
 
   #container > .dashboard-menu--open ~ #wrapper > #content {
-    margin-left: 235px;
+    margin-left: 265px;
   }
 
   #container > .dashboard-menu--closed ~ #wrapper > #content {
