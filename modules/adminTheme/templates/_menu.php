@@ -5,6 +5,46 @@
     </div>
 
     <div class="dashboard-menu__container">
+
+        <?php
+        if ($favorieten) {
+            echo "<div class='dashboard-menu__item dashboard-menu__item--closed'>\n";
+            echo "<div class='dashboard-menu__header'>";
+            echo "<div class='dashboard-menu__title-icon'>";
+            echo "<i class='fal fa-star' title='" . __('favorieten') . "'></i>";
+            echo "</div>";
+            echo "<h1 class='dashboard-menu__title'>";
+            echo __('favorieten');
+            echo "</h1>";
+            echo "</div>";
+
+            echo "<div class='dashboard-menu__links'>";
+            echo "<ul>";
+            foreach ($favorieten as $kinderdagVerblijfId => $folders) {
+                $kinderdafverblijf = KinderdagverblijfPeer::retrieveByPK($kinderdagVerblijfId);
+                echo "<li class=\"dashboard-menu__link\">" . $kinderdafverblijf->getNaam() . '<ul>';
+
+                /** @var Favorieten[] $links */
+                foreach ($folders as $folder => $links) {
+                    echo "<li>" . __($folder);
+                    echo "<ul>";
+                    foreach ($links as $link) {
+                        echo "<li>";
+                        echo link_to(__($link->getLabel()), $link->getUrl());
+                        echo " <span class='favorieten-delete' title='" . __('verwijder favoriet') . "'><i class='fal fa-trash-alt favorieten-delete' data-id='" . $link->getId() ."' data-url='" . url_for('favorieten/delete') . "'></i></span>";
+                        echo "</li>";
+                    }
+                    echo "</ul>";
+                    echo "</li>";
+                }
+            }
+
+            echo "</ul>";
+            echo "</div>";
+            echo "</div>\n\n";
+        }//end if
+        ?>
+
         <?php
         foreach($menu_config as $block)
         {

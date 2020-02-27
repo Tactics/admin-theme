@@ -125,6 +125,14 @@ $dashboard-menu-hover-color: #05606E;
     ul {
       list-style-type: none;
       margin: 0;
+
+      ul {
+        margin-left: 12px;
+        margin-top: 9px;
+          li {
+              margin-bottom: 9px;
+          }
+      }
     }
   }
 

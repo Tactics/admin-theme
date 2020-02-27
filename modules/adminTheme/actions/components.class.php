@@ -34,6 +34,7 @@ class AdminThemeComponents extends sfComponents
     public function executeMenu()
     {
         $this->menu_config = isset($this->menu_config) ? $this->menu_config : [];
+        $this->favorieten = isset($this->favorieten) ? $this->favorieten : [];
 
     }//end executeUserMenu()
 
