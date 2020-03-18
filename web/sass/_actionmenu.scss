@@ -50,5 +50,27 @@ div.actionsmenu {
       position: absolute;
       left: 0;
     }
+
+    &--danger {
+        color: #610316;
+        a {
+            color: #610316;
+
+            &:hover {
+                color: #AB091E;
+            }
+        }
+    }
+
+    &--confirm {
+      color: #014807;
+      a {
+          color: #014807;
+
+          &:hover {
+              color: #0E7817;
+          }
+      }
+    }
   }
 }
