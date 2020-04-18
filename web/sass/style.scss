@@ -10,44 +10,9 @@ $font-awesome-version: "Font Awesome 5 Pro";
 
 .new-ui {
   $primary-text-color: #1F2933;
-
-  font-family: 'Lato', sans-serif !important;
-  padding-bottom: 0;
-
-  body, td, p {
-    font-family: 'Lato', sans-serif !important;
-    color: var(--primary-text-color, $primary-text-color) !important;
-    background: none;
-    padding-bottom: 0;
-    font-size: 11px;
-  }
-
-  body {
-    background-color: initial !important;
-  }
-
-  body::before {
-    height: 40px;
-    display: block;
-    background-image: linear-gradient(to bottom right, #35469C, #2D3A8C);
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    box-shadow: rgba(29, 29, 31, 0.2) 0 1px 5px;
-  }
-
-  .object_updated_at, .object_updated_at a {
-    color: #767676;
-  }
-
-  table {
-    border-collapse: collapse;
-  }
-
-  color: #1F2933 !important;
+  $header-color-left: #35469C;
+  $header-color-right: #2D3A8C;
+  $box-shadow-color: rgba(29, 29, 31, 0.2);
   $background-color: #F5F7FA;
 
   $link-color: #099AA4;
@@ -73,13 +38,50 @@ $font-awesome-version: "Font Awesome 5 Pro";
 
   $border-radius: 5px;
 
+  font-family: 'Lato', sans-serif !important;
+  padding-bottom: 0;
+
+  body, td, p {
+    font-family: 'Lato', sans-serif !important;
+    color: var(--primary-text-color, $primary-text-color) !important;
+    background: none;
+    padding-bottom: 0;
+    font-size: 11px;
+  }
+
+  body {
+    background-color: initial !important;
+  }
+
+  body::before {
+    height: 40px;
+    display: block;
+    background-image: linear-gradient(to bottom right, var(--header-color-left, $header-color-left), var(--header-color-right, $header-color-right));
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: var(--box-shadow-color, $box-shadow-color) 0 1px 5px;
+  }
+
+  .object_updated_at, .object_updated_at a {
+    color: #767676;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  color: var(--primary-text-color, $primary-text-color) !important;
 
   a {
-    color: $link-color;
+    color: var(--link-color, $link-color);
   }
   a:hover {
     text-decoration: none;
-    color: $link-color--hover;
+    color: var(--link-color--hover, $link-color--hover);
   }
 
   hr {
