@@ -9,15 +9,15 @@ $font-awesome-version: "Font Awesome 5 Pro";
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-
 .new-ui {
+  $primary-text-color: #1F2933;
 
   font-family: 'Lato', sans-serif !important;
   padding-bottom: 0;
 
   body, td, p {
     font-family: 'Lato', sans-serif !important;
-    color: #1F2933 !important;
+    color: var(--primary-text-color, $primary-text-color) !important;
     background: none;
     padding-bottom: 0;
     font-size: 11px;
