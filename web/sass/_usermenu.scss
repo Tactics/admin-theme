@@ -1,6 +1,7 @@
 .user-menu {
   position: relative;
   color: #E0E8F9;
+    cursor: pointer;
 
   &--closed {
     .user-menu__links {
@@ -41,6 +42,7 @@
     right: 0;
     z-index: 99;
     box-shadow: rgba(29, 29, 31, 0.2) 0 4px 7px;
+      cursor: initial;
 
     ul {
       list-style-type: none;

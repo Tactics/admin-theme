@@ -111,6 +111,10 @@ $font-awesome-version: "Font Awesome 5 Pro";
       color: #014807;
   }
 
+    .dashboard-container .cumul-container iframe {
+        width: 100% !important;
+    }
+
   @import "header";
 
   @import "pageblock";

@@ -15,12 +15,6 @@
                     <span style='color:#E12D39;'>[<?php echo strToUpper($sf_user->getSecurityLevel());?>]</span>
                 <?php endif ?>
             </li>
-            <?php
-            /** @var array $actions */
-            foreach ($actions as $url => $label){
-                echo '<li class="user-menu__link"><a href="' . $url . '">' . $label . '</a></li>';
-            }
-            ?>
 
             <?php
             if ($sf_user->isSuperAdmin())
@@ -41,6 +35,13 @@
                     </ul>
                 </li>
             <?php endif; ?>
+
+            <?php
+            /** @var array $actions */
+            foreach ($actions as $url => $label){
+                echo '<li class="user-menu__link"><a href="' . $url . '">' . $label . '</a></li>';
+            }
+            ?>
         </ul>
     </div>
 </section>
@@ -59,11 +60,12 @@
             }
         );
 
-        $('.user-menu__toggler').click(function(){
-            $(this).closest('.user-menu').toggleClass('user-menu--closed');
+        $('.user-menu').click(function(){
+            $(this).toggleClass('user-menu--closed');
         });
 
-        $('.toggle-nested-list').click(function() {
+        $('.toggle-nested-list').click(function(e) {
+            e.stopImmediatePropagation();
             let icon = $(this).find('i');
             icon.toggleClass('fa-caret-right');
             icon.toggleClass('fa-caret-down');

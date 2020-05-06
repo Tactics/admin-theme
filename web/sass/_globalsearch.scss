@@ -26,16 +26,6 @@
         padding: 0;
       }
     }
-
-    &:after {
-      content : "\f0d7";
-      font-family: $font-awesome-version;
-      font-weight: 900;
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      color: #2D3A8C;
-    }
   }
 
   &__input-container {
