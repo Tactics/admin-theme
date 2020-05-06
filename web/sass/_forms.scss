@@ -106,6 +106,19 @@ input, textarea, select {
 
 select {
   padding: 4px 7px;
+  padding-right: 15px;
+}
+.form-select {
+    position: relative;
+    display: inline-block;
+    &:after {
+        content: "\f0d7";
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 900;
+        position: absolute;
+        right: 6px;
+        top: 7px;
+    }
 }
 
 input:focus, textarea:focus, select:focus {
