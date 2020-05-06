@@ -103,6 +103,14 @@ $font-awesome-version: "Font Awesome 5 Pro";
     margin-left: 65px;
   }
 
+  .color-danger {
+      color: #610316;
+  }
+
+  .color-confirm {
+      color: #014807;
+  }
+
   @import "header";
 
   @import "pageblock";
