@@ -1,7 +1,8 @@
 .opmerking,
 .opmerking-alert,
 .opmerking-prive,
-.opmerking-warning {
+.opmerking-warning,
+.flash-alert {
   border: none;
   border-radius: $border-radius;
   padding: 9px;
@@ -23,7 +24,8 @@
   color: #035388;
 }
 
-.opmerking-alert {
+.opmerking-alert,
+.flash-alert {
   background-color: #FFE3E3;
   color: #610316;
 }
@@ -31,6 +33,22 @@
 .opmerking-warning {
   background-color: #FFFBEA;
   color: #8D2B0B;
+}
+
+.flash-alert {
+    display: flex;
+    margin-right: 0;
+    margin-bottom: 5px;
+
+    &__content {
+        flex: 1;
+    }
+
+    &__closer {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 

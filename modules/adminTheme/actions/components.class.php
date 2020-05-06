@@ -49,4 +49,15 @@ class AdminThemeComponents extends sfComponents
 
     }//end executeLoader()
 
+    /**
+     * Create a flash message
+     *
+     * @return null
+     */
+    public function executeFlashMessage()
+    {
+        $this->message = isset($this->message) ? $this->message : "";
+
+    }//end executeFlashMessage()
+
 }//end class
