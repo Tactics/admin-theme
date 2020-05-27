@@ -75,3 +75,13 @@ table.objectdetails {
   line-height: 30px;
   margin-left: 5px;
 }
+
+// Added exception for certain edges cases
+h2.pageblock--with-clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+h2.pageblock--with-clearfix div.actionicon {
+  margin-top: 2px;
+}
