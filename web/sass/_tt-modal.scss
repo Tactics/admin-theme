@@ -1,6 +1,8 @@
 .ttBase-window {
     position: fixed !important;
     top: 100px !important;
+    left: calc(50vw - (50vw/2)) !important;
+    width: 50vw !important;
 }
 
 .ttBase-dialog-modal h2 {
@@ -12,5 +14,4 @@
     line-height: 13px;
     padding: 9px;
     border-bottom: solid 1px #F2F2F2;
-
 }
