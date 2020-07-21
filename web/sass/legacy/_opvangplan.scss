@@ -1,0 +1,290 @@
+/*
+  Globaal opvangplan
+*/
+table.opvangplan
+{
+   width: auto;
+   border: 1px solid #888888;
+   padding: 0px;
+   cursor: default;
+  border-collapse: initial !important;
+}
+
+table.opvangplan th,
+table.opvangplan td
+{
+  vertical-align: middle;
+   background-color:#efefef;
+}
+
+table.opvangplan td.selected
+{
+  background-color: #FFD47F !important;
+}
+
+table.opvangplan td.not_allowed
+{
+  background-color:#DDD;
+}
+
+table.opvangplan td.not_allowed.selected
+{
+  background-color:#CE9D3A !important;
+}
+
+table.opvangplan td.allowed
+{
+  background-color:#63BE7B;
+}
+
+table.opvangplan td.allmost_full
+{
+  background-color:#FCB77A;
+}
+
+
+table.opvangplan td.not_possible
+{
+  background-color:#dedede;
+}
+
+table.opvangplan td.not_possible_darken
+{
+  background-color: #aaaaaa;
+}
+
+table.opvangplan td.non_active
+{
+  /* Theoretically for IE 8 & 9 (more valid) */
+  /* ...but not required as filter works too */
+  /* should come BEFORE filter */
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* This works in IE 8 & 9 too */        /* ... but also 5, 6, 7 */
+  filter: alpha(opacity=50);        /* Older than Firefox 0.9 */
+  -moz-opacity:0.5;        /* Safari 1.x (pre WebKit!) */
+  -khtml-opacity: 0.5;
+  /* Modern!
+ /* Firefox 0.9+, Safari 2?, Chrome any?
+ /* Opera 9+, IE 9+ */
+  opacity: 0.5;
+}
+
+table.opvangplan thead th
+{
+   width: 18px;
+   text-align: center;
+   font-weight: normal;
+   padding: 0px;
+
+}
+
+table.opvangplan th
+{
+   font-size: 9px;
+   color: darkblue;
+   padding:0px;
+   text-align:center;
+   width:auto;
+}
+table.opvangplan td
+{
+  border:0px solid #888888;
+  width: 15px;
+  text-align: center;
+  padding: 3px;
+  font-size: 11px;
+  cursor: default;
+}
+
+table.opvangplan tr.dagdeeluren td
+{
+    font-size:8px !important;
+}
+
+table.opvangplan td.active
+{
+  background-color: white;
+}
+
+table.opvangplan th.weekend
+{
+  background-color:#CCCCCC;
+}
+
+table.opvangplan th.gesloten
+{
+  background-color:#999999;
+}
+
+table.opvangplan td.vakantie
+{
+  background-color: #D6E1F0;
+border:1px solid #888888;
+}
+table.opvangplan td.voor.active
+{
+  background-color: #AAAAFF;
+  color: black;
+}
+
+table.opvangplan td.na.active
+{
+  background-color: #FFAA7F;
+  color: black;
+}
+
+table.opvangplan td.voor.overschreden
+{
+  background-color: #FFAAAA;
+}
+
+table.opvangplan td.na.overschreden
+{
+  background-color: #FFAAAA;
+}
+
+table.opvangplan td.voorbij
+{
+  border: 1px solid #888;
+}
+
+table.opvangplan td.voor.voorbij.active
+{
+  background-color: #BDBDD7;
+}
+
+table.opvangplan td.na.voorbij.active
+{
+  background-color: #DFBFAF;
+}
+
+table.opvangplan td.vandaag
+{
+  border: 1px solid red;
+}
+
+table.opvangplan td.voorbij
+{
+  background-color: #EEE;
+}
+
+table.opvangplan tr.uren td
+{
+  font-size:8px;
+}
+
+table.opvangplan td.othermonth
+{
+  border: none;
+}
+
+table.opvangplan td.kleiner
+{
+  font-size: 10px;
+}
+
+/*
+ Maandplan
+*/
+table.opvangplan td.tijd
+{
+  font-size: 9px;
+}
+
+/*
+  Bewerkbaar
+*/
+table.opvangplan.editable td.voor,
+table.opvangplan.editable td.na
+{
+  cursor: pointer;
+}
+
+
+table.opvangplan td.week_alternate_1
+{
+  background-color:#ffcf83;
+  font-size:9px;
+  padding:0px;
+}
+table.opvangplan td.week_alternate_2
+{
+  font-size:9px;
+  padding:0px;
+  background-color:#f1f7ad;
+}
+
+/*
+  Aggregaat
+*/
+
+table.opvangplan.aggregaat td
+{
+  cursor: default;
+  color: black;
+  width: 34px;
+  font-size: 11px;
+}
+
+
+/*
+ Overzicht aanvragen
+*/
+.samenvatting table.opvangplan
+{
+  border:1px solid #888;
+}
+.samenvatting table.opvangplan td
+{
+  width: 12px;
+  text-align: center;
+  padding: 1px;
+  font-size: 9px;
+  color: #000000;
+  margin: 1px;
+  cursor: default;
+  width: 11px;
+
+
+
+}
+
+.samenvatting table.opvangplan th,
+.samenvatting table.opvangplan td
+  {
+    font-size: 8px;
+    padding:1px
+  }
+
+
+/*
+ OVERZICHT - Frontend - Kleindere versie
+*/
+
+.overzicht table.opvangplan td
+{
+  width: 12px;
+  text-align: center;
+  padding: 2px;
+  font-size: 9px;
+  color: #000000;
+  cursor: default;
+}
+
+.overzicht table.opvangplan td.kleiner
+{
+  font-size: 9px;
+}
+
+.overzicht table.opvangplan th
+{
+  font-size: 10px;
+}
+
+/* opvangplan kdv historiek */
+table.opvangplan.kdv_historiek tr td:first-child,
+table.opvangplan.kdv_historiek tr th:first-child
+{
+  width: 10%;
+  box-sizing: border-box;
+}
