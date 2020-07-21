@@ -1,0 +1,1863 @@
+/*********** DEFAULT STYLES ************/
+
+h1,h2,h3,h4,h5,h6,pre,form,body,html,p,fieldset,input
+{ margin: 0; padding: 0; }
+
+ul, ol {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+body, td, p
+{
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, arial, helvetica, sans-serif;
+  font-size: 10px;
+}
+
+body
+{
+  background-color: #F6F9FD;
+  padding: 10px;
+}
+
+@media print {
+    #verberg-favorieten-menu{
+        display: none;
+    }
+}
+
+.printonlyDiv,
+.printonlyTd,
+.printonly
+{
+  display: none;
+}
+
+thead { display: table-header-group; }
+tfoot { display: table-footer-group; }
+
+p {
+	margin:0px 0px 16px 0px;
+	padding:0px;
+}
+
+a,
+a:hover,
+a:link,
+a:visited,
+a:active
+{
+	color:#0000EE;
+	text-decoration:none;
+}
+
+a:hover {text-decoration: underline;}
+a img,:link img,:visited img { border: none; }
+
+
+h1 {
+	margin:0px 0px 15px 0px;
+	padding:0px;
+	font-size:20px;
+	font-weight:900;
+	color:#AEAEAE;
+}
+
+hr
+{
+  border: none;
+  border-top: 1px solid #7A8FAD;
+}
+
+th
+{
+  text-align: left;
+}
+
+option[disabled] {
+  color: #AAAAAA;
+}
+
+table.twoColumnLayout {
+	width: 100%;
+}
+
+table.twoColumnLayout td {
+	vertical-align: top;
+}
+
+table.twoColumnLayout td.fixedColumn {
+	padding-right: 10px;
+	width: 230px;
+}
+
+/*********** Dashboard ******************/
+
+img.icon
+{
+  border: 1px solid #999999;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 8px;
+  background-color: white;
+  background-image: url(/images/icons/_icon_bg.png);
+  float:left;
+}
+
+
+/*********** ALLERLEI ******************/
+
+.profielfoto {
+  border:1px solid #7A8FAD;
+}
+.warning {
+  color: red;
+}
+
+.float {
+  float: left;
+}
+
+div.spacer {
+  clear: both;
+}
+
+.alignright {
+  text-align: right;
+}
+
+
+/* Show calendar on top of everything */
+div.calendar {
+  z-index: 10000;
+}
+
+img.icon_inline {
+  vertical-align: middle;
+  margin: 0px;
+  margin-left: 2px;
+  margin-right: 2px;
+  position: relative;
+  top: -2px;
+}
+
+
+/*********** PAGE BLOCKS ************/
+
+div.pageblock {
+  /* background-color: #E9F1FD;
+	border: 1px solid #6FA9EC;*/
+	border: 1px solid #7A8FAD;
+	background-color: white;
+	margin-bottom: 8px;
+	padding: 6px;
+	padding-top: 5px;
+}
+
+div.pageblock--flex {
+    display: flex;
+}
+
+div.pageblock--scroll-small {
+    max-height: 150px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+div.pageblock--scroll-medium {
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+div.pageblock--scroll-large {
+    max-height: 450px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+div.pageblock.gearchiveerd {
+    background-color: #F9F9F9;
+	border: 1px solid #BBBBBB;
+}
+
+div.pageblock.kind {
+    border: 1px solid #B8AF6C;
+}
+
+div.flashpageblock {
+  background-color: #DFFCA6;
+	border: 1px solid #739845;
+	margin-bottom: 30px;
+	padding: 10px;
+	position: relative;
+	top: -10px;
+}
+
+div.pageactions {
+  position: relative;
+  float: right;
+  top: -13px;
+}
+
+
+h2 {
+  font-size:14px;
+  margin-bottom: 7px;
+}
+
+h2 img{
+  position: relative;
+  top: 7px;
+}
+
+/*
+h2.pageblock {
+	position: relative;
+  display: inline;
+  font-weight: bold;
+	font-size: 10px;
+	margin-bottom:1px;
+	color: #334F6B;
+	border: 1px solid #6FA9EC;
+	padding: 1px;
+	padding-left: 30px;
+	padding-right: 30px;
+	top: 4px;
+	background-color:#F5F9FF;
+	margin-left:10px;
+  z-index: 15;
+}
+*/
+
+h2.pageblock {
+  font-weight: normal;
+	font-size: 11px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-bottom:0px;
+	color: #072655;
+	padding-left: 7px;
+	border: 1px solid #7A8FAD;
+	border-bottom: 0px;
+	background-color:#D6E1F0;
+  z-index: 15; /* Moet hoger zijn dan de z-index van de overlay om divs te disablen */
+}
+
+
+h2.pageblock.gearchiveerd {
+	color: #444444;
+	border: 1px solid #BBBBBB;
+	background-color:#FEFEFE;
+    border-bottom: 0px;
+}
+
+h2.pageblock.kind {
+    border: 1px solid #B8AF6C;
+    border-bottom: 0px;
+    background: #EBE6C0;
+}
+
+/* action icons in pageblock header */
+h2.pageblock .actionicon
+{
+  float: right;
+  margin-top: -4px;
+  padding-right: 3px;
+}
+
+h2.pageblock .actionicon img
+{
+  padding-right:3px;
+}
+
+h2.pageblock .actionicon select
+{
+  float: right;
+  margin-top:2px;
+}
+
+
+fieldset legend .actionicon
+{
+  margin-top: -4px;
+  padding-right: 3px;
+}
+
+
+
+/* icons in a pageblock header */
+h2.pageblock img {
+  position: relative;
+  top: 2px;
+}
+
+div.pageactions {
+	width:auto;
+	min-width:200px;
+	text-align:right;
+}
+
+/******* OBJECT INFO ********/
+
+div.objectinfo {
+
+/*  top: -85px;
+  right: 10px;*/
+  width: auto;
+  background-color: white;
+  /*float:right;*/
+  border: 1px solid gray;
+  /*opacity: 0.15;*/
+}
+
+div.objectinfo td,
+div.objectinfo th {
+  background-color: white;
+  font-size: 9px;
+}
+
+div.objectinfo th {
+  padding-right:10px;
+}
+
+div.objectinfosmall {
+
+  text-align: right;
+  font-size: 9px;
+  color: #444444;
+}
+
+/*** TABLES ***/
+
+
+table.formtable td,
+table.formtable th
+{
+  height: 16px;
+}
+
+table.formtable th
+{
+  font-weight: normal;
+  text-align: right;
+  padding-right: 10px;
+  vertical-align: top;
+  top: -1px;
+  /*padding-top: 2px;*/
+  width: 150px;
+}
+
+
+.smaller table.formtable th {
+  width: 60px;
+}
+
+table.formtable th.error
+{
+  color: red;
+}
+
+table.formtable tr.required th
+{
+  font-weight: bold;
+}
+
+table.formtable .readonly
+{
+  font-weight: bold;
+  display:inline
+}
+
+
+/********* FORMS *************/
+
+
+form div.formitemhidable {
+  display:inline;
+}
+
+input, option, optgroup, select, textarea, button[type=submit] {
+  font-family: Verdana, arial, helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+button, input[type=submit], input[type=button] {
+	border: 1px solid #000000;
+	background-color: #F0F0F0;
+}
+
+input[type=image] {
+  border: none;
+}
+
+button.searchImage, input[type=button].searchImage, input[type=submit].searchImage {
+  background: #F0F0F0 url('/images/icons/zoom_16.gif') no-repeat 1px center;
+  padding-left: 17px;
+}
+
+div.buttongroup {
+  text-align: right;
+}
+
+input, textarea, select {
+	border: 1px solid #888888;
+}
+
+input:focus, textarea:focus, select:focus
+{
+	border: 1px solid black;
+	background-color: #FEFBF7;
+}
+
+
+input {
+ 	padding-left: 3px;
+	padding-right: 3px;
+}
+
+a.button, a.button:hover {
+	border: 1px solid #000000;
+  font-family: Verdana, arial, helvetica, sans-serif;
+  text-decoration: none;
+	color: black;
+	background-color: #F0F0F0;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+optgroup {
+  padding-top: 5px;
+	font-weight: bold;
+	color: #7F1F1F;
+}
+
+option {
+	color: black;
+}
+
+select.monospace,
+select.monospace option {
+	font-family: Courier New, Courier, monospace;
+	font-size: 11px;
+}
+
+fieldset {
+  /* border: 1px solid #AACDF4; */
+  border: 1px solid #DDD;
+	padding: 4px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+fieldset.problemen {
+  border: 1px solid #F50707;
+  background: #FEEFEF;
+}
+
+fieldset.problemen li {
+  font-weight: bold;
+}
+
+fieldset.problemen ul {
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+
+fieldset.infomessage {
+  border: 1px solid #F50707;
+  background: #FEEFEF;
+}
+
+
+tr.error th
+{
+  color: red;
+}
+
+tr.error td input
+{
+  background-color: #FEEFEF;
+  border: 1px solid red;
+}
+
+tr.error td textarea
+{
+  background-color: #FEEFEF;
+  border: 1px solid red;
+}
+
+tr.error td select
+{
+  background-color: #FEEFEF;
+  border: 1px solid red;
+}
+
+tr.problemen {
+  background: #FEEFEF;
+}
+
+tr.problemen th,
+tr.problemen td {
+  color: #F50707;
+}
+
+tr.problemen input {
+  border: 1px solid #F50707;
+}
+
+
+legend {
+	font-size: 11px;
+  border: 0px solid #6FA9EC;
+  padding: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left:10px;
+/*	background: #ffffff;*/
+}
+
+fieldset.problemen legend {
+  border: 1px solid #F50707;
+	background: #FDBBBB;
+}
+
+.opmerking,
+.opmerking-alert,
+.opmerking-prive,
+.opmerking-warning
+{
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:6px;
+	padding-right:6px;
+	margin-top:4px;
+	margin-bottom: 4px;
+	border: 1px solid #8FC9EC;
+    background-color: #F6F9FD;
+}
+
+.opmerking-alert {
+	border: 1px solid #FF0000;
+	background-color: #FFDDDD;
+}
+
+input.opmerking-alert {
+	border: 1px solid #FF0000;
+	background-color: #FFDDDD;
+}
+
+
+.opmerking-prive {
+  border: 1px solid #555555;
+  background-color: #EEEEEE;
+  color: #444444;
+}
+
+.opmerking-warning {
+    border: 1px solid #0066ff;
+    background-color: #DDDDFF;
+}
+
+#opmerkinglijst #toevoegen {
+  width: 80%;
+	position:absolute;
+	background-color:white;
+	border: 1px solid gray;
+	padding: 2px 2px 2px 2px;
+}
+
+#opmerkinglijst #toevoegen td {
+	background-color:white;
+}
+
+/***** MENU *****/
+
+div.menublock {
+	margin: 0px;
+	padding: 0px;
+  margin-bottom: 30px;
+}
+
+div.menublock h1 {
+  font-size: 11px;
+  color: #072655;
+  border-bottom: 1px solid #072655;
+  border-top: 1px solid #072655;
+	padding-bottom: 5px;
+	padding-top: 5px;
+  background-color: #C8DCFA;
+  margin-bottom: 3px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+div.menublock ul {
+  list-style: none;
+  padding: 0px;
+}
+
+div.menublock ul li {
+  border-bottom: 1px solid #DCDCDC;
+  padding-left: 0px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+div.menublock ul li a{
+  color: black;
+}
+
+div.menublock ul li:hover {
+  background-color: #E9F1FD;
+  color: #125DCE;
+}
+
+/******* MAILLIST ***********/
+
+div.maillist {
+  margin-bottom: 30px;
+/*  border: 1px solid #919191;*/
+}
+
+div.maillist ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+div.maillist div.titel {
+  font-weight: bold;
+}
+
+div.maillist small {
+	color: #8F8F8F;
+}
+
+
+div.maillist ul {
+  list-style: none;
+}
+
+div.maillist ul li {
+  border-bottom: 1px solid #DCDCDC;
+  padding-left: 10px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+div.maillist ul li a{
+  color: black;
+}
+
+div.maillist ul li:hover {
+  background-color: #F6F9FD;
+}
+
+#voorbeeldvenster {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+}
+
+/******** TOOLTIPS **********/
+
+div.tooltip {
+  margin-left: 20px;
+  font-size: 9px;
+  color: #A5A5A5;
+}
+
+div.tooltip:hover {
+  background-color: #FFFFE1;
+  color: black;
+}
+
+
+/******** ICONS ***********/
+div.icons {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+div.icons div.icon {
+  text-align: center;
+  width: 125px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+div.icons div.icon a:hover{
+	text-decoration: none;
+}
+
+/** depreciated: moet verwijderd worden **/
+div.icons div.iconblock {
+  border-top: 1px solid #888888;
+  padding-top: 5px;
+  clear: both;
+}
+
+div.icons fieldset.iconblock {
+	border: none;
+  border-top: 1px solid #888888;
+  padding-top: 5px;
+  clear: both;
+}
+
+div.icons fieldset.iconblock > label {
+  font-weight: bold;
+  display: inline;
+  clear: both;
+	color: black;
+	margin-bottom:1px;
+	padding: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	position: relative;
+	top: -14px;
+	background-color:#FFFFFF;
+	margin-left:10px;
+	z-index: 1;
+}
+
+/** depreciated: moet verwijderd worden **/
+div.icons div.iconblock h2 {
+  display: inline;
+  clear: both;
+	color: black;
+	margin-bottom:1px;
+	padding: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	position: relative;
+	top: -14px;
+	background-color:#FFFFFF;
+	margin-left:10px;
+	z-index: 1;
+}
+
+div.icons fieldset.smalliconblock {
+  width: 100px;
+  border: none;
+}
+
+div.icons fieldset.smalliconblock div.icon a {
+	font-size: 9px;
+}
+
+
+div.icons fieldset.smalliconblock div.icon {
+  text-align: center;
+  width: 50px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+/******* CONTEXT ACTIONS MENU *********/
+div.actionsmenu {
+  width: 170px;
+  padding: 3px;
+  padding-top: 2px;
+  margin-left: 15px;
+  padding-left: 5px;
+  border: 1px solid #666666;
+  background: #F7F7F7;
+}
+
+div.actionsmenu hr
+{
+  border: 0px;
+  border-top: 1px solid black;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+table.twoColumnLayout td.fixedColumn div.actionsmenu {
+  width: auto;
+  padding: 3px;
+  padding-top: 2px;
+  margin-left: 0px;
+  padding-left: 5px;
+  margin-top: 12px;
+  border: 1px solid #666666;
+  background: #F7F7F7;
+}
+
+div.actionsmenu div.menuitem {
+  width: 100%;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  display: flex;
+}
+
+div.actionsmenu div.menuitem a{
+    display: inline-block;
+    width: 79%;
+    padding-left: 0.5em;
+}
+
+div.actionsmenu div.menuitem .disabled {
+	color: #888888;
+}
+
+div.actionsmenu img {
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+
+div.actionsmenu h1 {
+  font-size: 10px;
+  font-weight: bold;
+	color: black;
+	padding-bottom: 2px;
+	margin-top: 5px;
+	margin-bottom: -1px;
+    display: inline-block;
+    width: 79%;
+    border-bottom: 1px solid black;
+}
+
+div.actionsmenu .photo img
+{
+    width: 170px;
+    height: auto;
+    border-radius: 5px;
+}
+div.actionsmenu .photo
+{
+    text-align: center;
+
+    margin-bottom:10px;
+}
+div.contextmenu {
+  margin-top: 10px;
+}
+
+div.contextmenu span.contextlink {
+  border: 1px solid #888888;
+  vertical-align: middle;
+  cursor: pointer;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+	margin-right: 8px;
+	background-color: #D4D0C8;
+}
+
+div.contextmenu span.contextlink a {
+ 	color: black;
+	font-weight: normal;
+}
+
+div.contextmenu span.contextlink:hover {
+	background-color: #FDDAB7;
+}
+
+div.contextmenu span.contextlink a:hover {
+  text-decoration: none;
+}
+
+div.contextmenu span.contextlink img {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  position:relative;
+  top: -2px;
+}
+
+/********* IMAGE_CHECKBOX ********/
+
+div.img_checkbox_checked a{
+  color: blue;
+}
+
+
+div.img_checkbox_unchecked a{
+  color: #888888;
+}
+
+
+/********** FILTER ************/
+
+div.filter {
+  background-color: #FFFFFF;
+  border: 1px solid #7A8FAD;
+  padding: 2px;
+  margin: 0px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+div.filter div.verticalseparator {
+	display:inline;
+	border-left:1px solid #999999;
+	width=1px;
+	margin-left:7px;
+	margin-right:7px;
+}
+
+
+div.filter div.filtergroup {
+	display: inline;
+	border: 1px solid #BBBBBB;
+	padding: 2px;
+	padding-top: 1px;
+}
+
+
+
+/********** log table **********/
+
+table.tabel_log {
+  padding: 2px;
+}
+
+table.tabel_log td{
+  background-color: #F2F6FD;
+}
+
+
+/*********** TAB BUTTONS *********/
+
+a.tabbutton, a.tabbutton:hover {
+	border: 1px solid #9E9E9E;
+	border-bottom: none;
+  text-decoration: none;
+	color: black;
+	background-color: #EFEFEF;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 7px;
+	padding-bottom: 10px;
+	position: relative;
+	top: 1px;
+	left: 10px;
+}
+
+a.tabbuttonactive, a.tabbuttonactive:hover {
+	border: 1px solid #6FA9EC;
+	border-bottom: none;
+	background-color: #E9F1FD;
+  text-decoration: none;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 8px;
+	padding-bottom: 11px;
+	position: relative;
+	top: 1px;
+	left: 10px;
+}
+
+a.tabbuttonactive img,
+a.tabbutton img {
+  padding-right:5px;
+	min-height: 32px;
+}
+
+/************* BREADCRUMB ***************/
+
+.breadcrumb {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #888888;
+}
+
+.breadcrumb li {
+	display: inline;
+	padding: 0;
+	margin: 0;
+	color: #666;
+}
+
+/*.breadcrumb li:before { content: "> "; }
+.breadcrumb li:first-child:before { content: ""; }*/
+
+
+
+/************** BOOM ****************/
+
+
+
+div.boom div.folderinhoud
+ {
+  border-left: 1px dotted black;
+
+	margin: 0px;
+	margin-left: 0px;
+	padding-left: 20px;
+}
+
+div.boom div.folderopen,
+div.boom div.folderroot,
+div.boom div.folderdicht {
+  border-left: 1px dotted black;
+  padding-top: 2px;
+}
+
+div.boom img {
+  position: relative;
+  left: -5px;
+  border: none;
+}
+
+div.boom div.folderinhoud div:last-child  {
+  border-left: none;
+  margin-left: 1px;
+}
+
+div.boom a {
+  text-decoration: none;
+}
+
+
+/*********** OBJECTTABEL ************/
+
+table.objectdetails {
+	 border-collapse: collapse;
+}
+
+table.objectdetails th {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: right;
+  padding-right: 10px;
+  color: #446A90;
+  width: 135px;
+}
+
+table.objectdetails tr,
+table.objectdetails td {
+  vertical-align: top;
+  font-weight: noram;
+}
+
+
+
+/******** Snelzoeken **********/
+div.snelzoeken {
+	position:absolute;
+	background-color:white;
+	border: 1px solid gray;
+	padding: 2px 2px 2px 2px;
+}
+
+/********* Ajax Notification ***********/
+#notification {
+	position: fixed;
+	bottom: 0px;
+	padding: 0px;
+	height: 20px;
+	margin: 0px;
+	width: 100%;
+	background-color: #FFFF99;
+	display: block;
+	text-align: center;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 5px;
+	z-index: 900;
+}
+
+/*
+Waarschijnlijk nog wel nodig voor IE brol
+
+html,body {
+	height: 100%;
+}
+*/
+
+html {
+	padding: 0 0 25px 0;  /* create area for notification area */
+}
+
+
+/********** Systeem Meldingen ******************/
+
+div.systeemmelding {
+  padding: 4px;
+  margin: 8px;
+  margin-bottom: 14px;
+  border: 1px solid #FFD400;
+  background-color: #FFFFAA;
+}
+
+div.systeemmelding.info {
+  border: 1px solid #2AFF2A;
+  background-color: #D4FFD4;
+}
+
+div.systeemmelding img.meldingicon {
+  float: left;
+}
+
+
+/****************** Image Radio Tag *****************/
+img.imageRadioTag {
+  padding: 2px;
+  position: relative;
+  top: +3px;
+  cursor: pointer;
+}
+
+input.number {
+	text-align: right;
+}
+
+/************** Permissies ******************/
+ul.editpermissionlist li {
+	list-style-type: none;
+}
+
+ul.editpermissionlist {
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+ul.editpermissionlist ul {
+	padding-left: 15px;
+	padding-bottom: 10px;
+}
+
+ul.editpermissionlist div.permissioninfo {
+	padding-left: 38px;
+	font-style: italic;
+}
+
+
+/************** Select list gebruikt in opslaan van lijsten/queries *************/
+div.mySelect {
+	overflow:auto;
+	height:110px;
+	width:100%;
+	background-color: white;
+	border: 1px solid #888888; padding: 2px;
+}
+
+div.mySelect div.item {
+  padding: 2px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+div.mySelect div.item a {
+	color: black;
+}
+
+div.mySelect div.item:hover {
+	border: 1px solid #cccccc;
+	background-color: #eeeeee;
+}
+
+
+div.mySelect div.item div.actions {
+	display: none;
+}
+
+div.mySelect div.item:hover div.actions {
+ 	text-align:right;
+	display: block;
+}
+
+div.mySelect div.item div.naam {
+	cursor: pointer;
+}
+
+div.mySelect div.item:hover div.naam {
+	font-weight: bold;
+}
+
+div.mySelect div.item div.naam:hover {
+	text-decoration: underline;
+}
+
+
+/********************* inschrijvingen ***********************/
+.status_nieuw
+{
+  background-color:#FFEB84 !important;
+}
+
+.status_vernieuwing
+{
+  background-color:#FDD17F  !important;
+}
+
+.status_ok,
+.status_vrij
+{
+  background-color:#83C77D !important;
+}
+
+.status_geannuleerd,
+.status_weigering,
+.status_volzet
+{
+  background-color:#F8696B !important;
+}
+
+.status_afgesloten
+{
+  background-color:#CCCCCC !important;
+}
+
+.status_behandeling
+{
+  background-color:#C1DA81  !important;
+}
+
+.status_bijnavolzet
+{
+  background-color:#FCB77A !important;
+}
+
+.status_wachtlijst
+{
+  background-color:#FCB77A  !important;
+}
+
+/********************* aanvragen ***********************/
+.aanvraag_status_open {
+  background-color: #FFEB84 !important;
+}
+
+.aanvraag_status_voorstel {
+  background-color: #a8c0de !important;
+}
+
+.aanvraag_status_geplaatst {
+  background-color: #C1DA81 !important;
+}
+
+.aanvraag_status_verlopen {
+  background-color: #c0b2d1 !important;
+}
+
+.aanvraag_status_geannuleerd {
+  background-color: #F98370 !important;
+}
+
+.aanvraag_status_afgesloten {
+  background-color: #c0b2d1 !important;
+}
+
+/********************* aanvraagkinderdagverblijven ***********************/
+.aanvraagkinderdagverblijf_status_wachtlijst {
+  background-color: #FFEB84 !important;
+}
+
+.aanvraagkinderdagverblijf_status_geen_plaats {
+  background-color: #d3d3d3 !important;
+}
+
+.aanvraagkinderdagverblijf_status_reservelijst {
+  background-color: #FCB77A !important;
+}
+
+.aanvraagkinderdagverblijf_status_voorstel {
+  background-color: #a8c0de !important;
+}
+
+.aanvraagkinderdagverblijf_status_geplaatst {
+  background-color: #C1DA81 !important;
+}
+
+.aanvraagkinderdagverblijf_status_uitbreiding {
+  background-color: #C1DA81 !important;
+}
+
+.aanvraagkinderdagverblijf_status_geweigerd,
+.aanvraagkinderdagverblijf_status_volzet{
+  background-color: #F98370 !important;
+}
+
+.aanvraagkinderdagverblijf_status_geannuleerd {
+  background-color: #FFA500 !important;
+}
+
+.aanvraagkinderdagverblijf_status_geannuleerd_reservelijst {
+  background-color: #FFCD4B !important;
+}
+
+.aanvraagkinderdagverblijf_status_afgesloten {
+  background-color: #c0b2d1 !important;
+}
+
+/********************* dossier kind ***********************/
+
+div.dossier_status_verouderd {
+    display: inline-block;
+    border: 1px solid #888;
+    background-color: #FFA500;
+    padding: 1px;
+    width: 120px;
+    text-align: center;
+}
+
+div.dossier_status_uptodate {
+    display: inline-block;
+    border: 1px solid #888;
+    background-color: #C1DA81;
+    padding: 1px;
+    width: 120px;
+    text-align: center;
+}
+
+div.dossier_status_onbestaand {
+    display: inline-block;
+    border: 1px solid #888;
+    background-color: #F98370;
+    padding: 1px;
+    width: 120px;
+    text-align: center;
+}
+
+div.sociaal_tarief_status_aangevraagd {
+    display: inline-block;
+    background-color: #FFEB84;
+    width: 120px;
+    text-align: center;
+}
+
+div.sociaal_tarief_status_goedgekeurd {
+    display: inline-block;
+    background-color: #C1DA81;
+    width: 120px;
+    text-align: center;
+}
+
+div.sociaal_tarief_status_geweigerd {
+    display: inline-block;
+    background-color: #F98370;
+    width: 120px;
+    text-align: center;
+}
+
+div.bordered {
+    border: 1px solid #888;
+    padding: 1px;
+}
+
+/********************* colour scale ***********************/
+
+/* It goes to eleven */
+.colorscale_11_bg
+{
+  background-color: purple !important;
+  color: white !important;
+}
+
+.colorscale_10_bg
+{
+  background-color: #F8696B !important;
+}
+
+.colorscale_9_bg
+{
+  background-color: #F98370 !important;
+}
+
+.colorscale_8_bg
+{
+  background-color: #FA9D75 !important;
+}
+
+.colorscale_7_bg
+{
+  background-color: #FCB77A !important;
+}
+
+.colorscale_6_bg
+{
+  background-color: #FDD17F !important;
+}
+
+.colorscale_5_bg
+{
+  background-color: #FFEB84 !important;
+}
+
+.colorscale_4_bg
+{
+  background-color: #E0E383 !important;
+}
+
+.colorscale_3_bg
+{
+  background-color: #C1DA81 !important;
+}
+
+.colorscale_2_bg
+{
+  background-color: #A2D07F !important;
+}
+
+.colorscale_1_bg
+{
+  background-color: #83C77D !important;
+}
+
+.colorscale_0_bg
+{
+  background-color: #63BE7B !important;
+}
+
+.colorscale_NA_bg
+{
+    background-color: #98AAAA !important;
+}
+
+table.opvangplan td.colorscale_jaarplan_1_bg
+{
+  background-color: #F8696B;
+  color:black;
+}
+
+table.opvangplan td.colorscale_jaarplan_0_bg
+{
+  background-color: #63BE7B;
+  color:black;
+}
+
+.legende
+{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: 1px dotted black;
+  padding: 3px;
+  color:black;
+  text-align:left;
+  background-color:white;
+}
+/**************************************/
+
+.center
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input.disabled
+{
+  background-color: #F0F0F0;
+  color: #808080;
+  border: 1px solid #888888;
+}
+
+
+
+
+/**************************************/
+/* Ajax */
+/**********************/
+.indicator
+{
+  background-image: url('/images/indicator.gif');
+  background-position:left top;
+  background-repeat:no-repeat;
+  height:20px;
+}
+
+
+/****************************/
+/* status coloring          */
+/****************************/
+.status_nieuw,
+.status_optie
+{
+  background-color: #FFEB84;
+}
+
+.status_voorstel
+{
+  background-color: #C1DA81;
+}
+
+.status_behandeld,
+.status_definitief,
+.status_aanwezig
+{
+  background-color: #83C77D;
+}
+
+.status_geen_plaats,
+.status_tijdig_geannuleerd
+{
+  background-color: #FCB77A;
+}
+
+.status_geweigerd,
+.status_te_laat_geannuleerd,
+.status_niet_aanwezig
+{
+  background-color: #F8696B;
+}
+
+.status_afgesloten
+{
+  background-color: #CCCCCC;
+}
+
+
+/********************* colour scale ***********************/
+.colorscale_11_bg   /* It goes to eleven */
+{
+  background-color: purple;
+  color: white;
+}
+
+.colorscale_10_bg
+{
+  background-color: #F8696B;
+}
+
+.colorscale_9_bg
+{
+  background-color: #F98370;
+}
+
+.colorscale_8_bg
+{
+  background-color: #FA9D75;
+}
+
+.colorscale_7_bg
+{
+  background-color: #FCB77A;
+}
+
+.colorscale_6_bg
+{
+  background-color: #FDD17F;
+}
+
+.colorscale_5_bg
+{
+  background-color: #FFEB84;
+}
+
+.colorscale_4_bg
+{
+  background-color: #E0E383;
+}
+
+.colorscale_3_bg
+{
+  background-color: #C1DA81;
+}
+
+.colorscale_2_bg
+{
+  background-color: #A2D07F;
+}
+
+.colorscale_1_bg
+{
+  background-color: #83C77D;
+}
+
+.colorscale_0_bg
+{
+  background-color: #63BE7B;
+}
+
+/* self-clear floats */
+.group:after{
+  content: ".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+/* for IE6 */
+* html .group{
+  height:1%;
+}
+/* for IE7 */
+*:first-child+html .group{
+  min-height:1px;
+}
+
+div.korteOpvang{
+    background-color: #77cc77;
+}
+
+div.ifKindOuderDan{
+    display:inline-block
+}
+
+/* * * REFERENTIESTATUSSEN ALGEMEEN * * */
+div.positief
+{
+    background-color: #A2D07F;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    padding: 1px;
+    border: 1px solid darkgreen;
+}
+div.neutraal
+{
+    background-color: #FFEB84;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    padding: 1px;
+    border: 1px solid burlywood;
+}
+div.negatief
+{
+    background-color: #F8696B;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    padding: 1px;
+    border: 1px solid darkred;
+}
+
+/* * * VERWERK AUTOMATISCH STATUSSEN * * */
+td.overeenkomst_broerzus_100
+{
+    background-color: #A2D07F !important;
+    color: black !important;
+}
+td.overeenkomst_broerzus_50
+{
+    background-color: #FFEB84 !important;
+    color: black !important;
+}
+td.overeenkomst_broerzus_0
+{
+    background-color: #F8696B !important;
+    color: black !important;
+}
+
+/* * * VERWERK AUTOMATISCH LEEFTIJD * * */
+td.jonger_dan_3
+{
+    background-color: #F8696B !important;
+    color: black !important;
+}
+
+/* * * AANWEZIGHEDEN UREN FORM * * */
+#dialog-aanwezigheden-invullen tr
+{
+    height: 24px;
+}
+#dialog-aanwezigheden-invullen tr th,
+#dialog-aanwezigheden-invullen tr td,
+#dialog-aanwezigheden-invullen tr a,
+#dialog-aanwezigheden-invullen tr img,
+#dialog-aanwezigheden-invullen tr input
+{
+    vertical-align: middle;
+}
+
+.favorietenknop
+{
+    top: 49%;
+    margin-left: -8px;
+    cursor: pointer;
+    position: fixed;
+    height: 100px;
+}
+
+.favorieten_form
+{
+    display: inline-block;
+    width: 5%;
+    cursor: pointer;
+}
+
+.invisible_button
+{
+    cursor: pointer;
+    background: none;
+    padding: 0%;
+    border: none;
+}
+
+.hide-favorieten-in-werkbalk
+{
+    visibility: hidden;
+
+}
+
+.favoriet    {
+    cursor: pointer;
+    color: orange;
+    visibility: visible;
+    display: inline-block;
+    margin-left: 12%;
+
+}
+
+.hidden{
+
+    visibility: hidden;
+}
+
+
+.bewerk_header img{
+    float: right;
+}
+
+.bewerk_header{
+    border-bottom: 1px solid black;
+}
+
+.show-favorieten-in-werkbalk{
+    visibility: visible;
+    color: orange;
+    display: inline-block;
+    margin-left: 12%;
+    size: 2em;
+    cursor: pointer;
+    font-size: 1.2em;
+
+}
+
+.dubbele_lijnen_hoogte{
+    margin-top: 1em;
+}
+
+/*z-index v.d. calender moet hoger dan tt-window z-index op de factuur pagina*/
+#factuur .calendar{
+    z-index: 10000!important;
+}
+
+span.application-header-subtitle{
+    font-size: 0.8em;
+    color: white;
+    border-left: 1px solid white;
+    padding-left: 0.5em;
+    margin-left: 0.5em;
+}
+
+/* * * regularisaties * * */
+div.regularisatie_nieuw {
+  display: inline-block;
+  background-color: #FFEB84;
+  width: 120px;
+  text-align: center;
+}
+
+div.regularisatie_behandeld {
+  display: inline-block;
+  background-color: #C1DA81;
+  width: 120px;
+  text-align: center;
+}
+
+/* * * coda records * * */
+.coda_record_new {
+  display: inline-block;
+  background-color: #FFEB84;
+  width: 120px;
+  text-align: center;
+}
+.coda_record_ok {
+  display: inline-block;
+  background-color: #C1DA81;
+  width: 120px;
+  text-align: center;
+}
+.coda_record_skip {
+  display: inline-block;
+  background-color: #a8c0de;
+  width: 120px;
+  text-align: center;
+}
+.coda_record_error {
+  display: inline-block;
+  background-color: #F8696B;
+  width: 120px;
+  text-align: center;
+}
+
+
+/*********** OVERWRITE SF1 TO SMARTADMIN FIXES  ************/
+
+.col .label,
+.col .input,
+.col .select {
+    height: auto !important;
+}
+
+.col .label {
+    width: auto !important;
+    text-align:left ! important;
+}
+
+.bg-color-orange {
+    background-color: #FCB77A !important;
+}
+
+.bg-color-green-light {
+    background-color: #C1DA81 !important;
+}
+
+.bg-color-green {
+    background-color: #77cc77 !important;
+}
+
+.bg-color-red {
+    background-color: #F8696B !important;
+}
+
+.bg-color-yellow {
+    background-color: #FFEB84 !important;
+}
+
+.bg-color-blue {
+    background-color: #a8c0de !important;
+}
+
+.dashboard-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.dashboard-wrapper .dashboard-wrapper-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dashboard-wrapper .dashboard-item {
+    width: 48%;
+}
+
+.dashboard-wrapper .dashboard-item-full {
+    width: 100%;
+}
+
+.dashboard-wrapper .pageblock i {
+    font-size: 3em;
+    padding: 5px;
+    margin-right: 0.5em;
+    color: #767676;
+}
+
+.mceStatusbar {
+    text-indent: -9999px;!important;
+}
