@@ -1,50 +1,45 @@
+@media print {
   .noprint,
   #sfWebDebug,
   #navigation,
-  #header
-  {
+  #header {
     display: none;
   }
 
   div.pageblock {
     background-color: white;
-    border:1px solid #888888;
+    border: 1px solid #888888;
   }
 
   h2.pageblock {
     background-color: white;
-    border:1px solid #888888;
+    border: 1px solid #888888;
     color: black;
   }
 
-  body
-  {
+  body {
     background-image: none;
     background-color: white;
   }
 
-  div#content
-  {
-    margin-left:10px;
+  div#content {
+    margin-left: 10px;
   }
-  
-  .ui-tabs-hide
-  {
-    display:none;
-  }
-  
-  .ui-tabs-nav-item
-  {
+
+  .ui-tabs-hide {
     display: none;
   }
-  
-  .ui-tabs-nav-item.ui-tabs-selected
-  {
-    display: block; 
+
+  .ui-tabs-nav-item {
+    display: none;
   }
-  
-  .printonlyDiv,
-  .printonlyTd
-  {
+
+  .ui-tabs-nav-item.ui-tabs-selected {
     display: block;
   }
+
+  .printonlyDiv,
+  .printonlyTd {
+    display: block;
+  }
+}
