@@ -5,39 +5,55 @@
   #header {
     display: none;
   }
+}
 
+@media print {
   div.pageblock {
     background-color: white;
     border: 1px solid #888888;
   }
+}
 
+@media print {
   h2.pageblock {
     background-color: white;
     border: 1px solid #888888;
     color: black;
   }
+}
 
+@media print {
   body {
     background-image: none;
     background-color: white;
   }
+}
 
+@media print {
   div#content {
     margin-left: 10px;
   }
+}
 
+@media print {
   .ui-tabs-hide {
     display: none;
   }
+}
 
+@media print {
   .ui-tabs-nav-item {
     display: none;
   }
+}
 
+@media print {
   .ui-tabs-nav-item.ui-tabs-selected {
     display: block;
   }
+}
 
+@media print {
   .printonlyDiv,
   .printonlyTd {
     display: block;
