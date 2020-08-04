@@ -111,6 +111,7 @@ select {
 .form-select {
     position: relative;
     display: inline-block;
+    min-width: 40px;
     &:after {
         content: "\f0d7";
         font-family: "Font Awesome 5 Pro";
