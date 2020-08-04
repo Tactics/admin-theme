@@ -15,10 +15,15 @@ button, input[type="submit"], input[type="button"], .button {
 
   display: inline-block;
 
-  &:hover {
+  &:hover:not([disabled]) {
     padding: 7px 9px;
     border:none;
     color: #1F2933;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: .4;
   }
 }
 
