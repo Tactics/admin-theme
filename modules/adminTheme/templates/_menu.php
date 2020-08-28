@@ -106,8 +106,8 @@
     jQuery(function($)
     {
         $('.dashboard-menu__header').click(function () {
-            let $this = $(this).closest('.dashboard-menu__item');
-            let $navigation = $this.closest('nav');
+            var $this = $(this).closest('.dashboard-menu__item');
+            var $navigation = $this.closest('nav');
 
             // is Main navigation closed? Open it!
             if ($navigation.hasClass('dashboard-menu--closed'))

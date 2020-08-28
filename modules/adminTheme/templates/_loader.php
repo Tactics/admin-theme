@@ -8,7 +8,7 @@
         jQuery.aantalRequests++;
         if (jQuery.aantalRequests > 0)
         {
-            let $loader = jQuery('.ajax-loader');
+            var $loader = jQuery('.ajax-loader');
             $loader.css('opacity', '1');
             $loader.animate({
                 "width": "50%"
@@ -22,7 +22,7 @@
         jQuery.aantalRequests--;
         if ((jQuery.aantalRequests < 1) && ((typeof(Ajax) == 'undefined') || Ajax.activeRequestCount == 0))
         {
-            let $loader = jQuery('.ajax-loader');
+            var $loader = jQuery('.ajax-loader');
             $loader.animate({
                 "width": "100%"
             }, "slow");
