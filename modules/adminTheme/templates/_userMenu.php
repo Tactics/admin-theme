@@ -70,7 +70,7 @@
             icon.toggleClass('fa-caret-right');
             icon.toggleClass('fa-caret-down');
             $(this).closest('.user-menu__link').find('.user-menu__nested-links').toggleClass('user-menu__nested-links--closed');
-        })
+        });
     });
 
 </script>
