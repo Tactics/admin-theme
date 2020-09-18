@@ -10,7 +10,7 @@
     <div class="user-menu__links">
         <ul>
             <li>
-                <?php echo __('U bent ingelogd als');?>:<br> <?php echo link_to_if($sf_user->controleerToegangTotPersoon($sf_user->getPersoon()), $sf_user->getPersoon()->getNaam(), 'persoon/show?id=' . $sf_user->getPersoon()->getId(), array('style' => "font-weight:bold;")); ?>
+                <?php echo $labels['ingelogd'];?>:<br> <?php echo link_to_if($sf_user->controleerToegangTotPersoon($sf_user->getPersoon()), $sf_user->getPersoon()->getNaam(), 'persoon/show?id=' . $sf_user->getPersoon()->getId(), array('style' => "font-weight:bold;")); ?>
                 <?php if ($sf_user->getSecurityLevel()) : ?>
                     <span style='color:#E12D39;'>[<?php echo strToUpper($sf_user->getSecurityLevel());?>]</span>
                 <?php endif ?>
@@ -19,13 +19,13 @@
             <?php
             if ($sf_user->isSuperAdmin())
             {
-                echo '<li class="user-menu__link"><a href="#" class="change-user"><i class="fal fa-user-secret"></i> ' . __('Aanmelden als...') . '</a></li>';
+                echo '<li class="user-menu__link"><a href="#" class="change-user"><i class="fal fa-user-secret"></i> ' . $labels['aanmelden'] . '...</a></li>';
             }
             ?>
 
             <?php if (!empty($languages)): ?>
                 <li class="user-menu__link">
-                    <a class="toggle-nested-list" href="#"><i class="fas fa-caret-right"></i> Taal</a>
+                    <a class="toggle-nested-list" href="#"><i class="fas fa-caret-right"></i><?php echo $labels['taal']?></a>
                     <ul class="user-menu__nested-links user-menu__nested-links--closed">
                         <?php
                         foreach ($languages as $url => $label) {
@@ -52,7 +52,7 @@
         $('.change-user').click(
             function()
             {
-                var user_id = prompt('Aanmelden als een andere gebruiker.  Geeft het gebruikersnummer op.');
+                var user_id = prompt('<?php echo $labels['prompt']; ?>');
                 if (user_id)
                 {
                     document.location = "<?php echo url_for($changeUserUrl); ?>".replace('999', user_id);
