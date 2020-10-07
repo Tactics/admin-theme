@@ -1,4 +1,6 @@
 h2.pageblock {
+  display: flex;
+  justify-content: space-between;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 9px;
