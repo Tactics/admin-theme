@@ -52,7 +52,7 @@
         $('.change-user').click(
             function()
             {
-                var user_id = prompt('<?php echo $labels['prompt']; ?>');
+                var user_id = prompt("<?php echo $labels['prompt']; ?>");
                 if (user_id)
                 {
                     document.location = "<?php echo url_for($changeUserUrl); ?>".replace('999', user_id);
