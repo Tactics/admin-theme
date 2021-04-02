@@ -46,11 +46,10 @@
             input {
                 width: calc(100% - 16px);
             }
-            select {
-                width: 100%;
-            }
         }
-
+        .form-select{
+            width: 100%;
+        }
     }
 
     &__installation {
