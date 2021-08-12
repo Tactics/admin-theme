@@ -66,13 +66,14 @@ $font-awesome-version: "Font Awesome 5 Pro";
 
   $primary-color: #1CD4D4;
   $primary-color-shadow: rgba(58,231,225,0.30);
-
   $secondary-color: #C4C6FF;
 
   $danger-color: #FFBDBD;
   $danger-color-shadow: rgba(255,53,61,0.30);
+  $danger-text-color: #610316;
 
   $default-button-color: #E4E7EB;
+  $default-label-color: #7B8794;
 
   background-color: $background-color !important;
 
@@ -161,6 +162,7 @@ $font-awesome-version: "Font Awesome 5 Pro";
 
   @import "tt-modal";
 
-  @import "card";
+  @import "system-requirements";
 
+  @import "system-information";
 }
