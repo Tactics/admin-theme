@@ -24,7 +24,7 @@ table.grid thead tr td
 	background-color: #BECDF2;
 	padding: 0px; 
 	font-weight: bold;
-	border: 1px solid /* #E9F1FD; */ white;
+	border: 1px solid white;
 	cursor: pointer;
 }
 
@@ -77,28 +77,16 @@ table.grid tbody tr
 }
 
 table.grid tbody tr td {
-	/*border-top: 1px solid #E9F1FD;
-	border-bottom: 1px solid #E9F1FD; */
-}
-
-table.grid tbody tr td {
   border: none;
 }
 
 table.grid tbody tr.even td {
 }
 
-/*
-table.grid tbody tr td a {
-  color: #0000CC;
-}
-*/
 
 
 table.grid tbody tr.even td {
   color: black;
-/*	border-top: 1px solid #E9F1FD;
-	border-bottom: 1px solid #E9F1FD; */
 	background-color: #EDF3FE;
 }
 
@@ -107,8 +95,6 @@ table.grid tbody tr.static td,
 table.grid tbody tr.static:hover td {
 	background-color: #DAE3F8;
 	border: 1px solid #E9F1FD;
-/*	border-top: 1px solid #E9F1FD;
-	border-bottom: 1px solid #E9F1FD;*/
 }
 
 
@@ -130,10 +116,6 @@ table.grid tbody tr:hover td,
 table.grid tbody tr.gearchiveerd:hover td,
 table.grid tbody tr.even.gearchiveerd:hover td
 {
-/*	background-color: white;
-	border-top: 1px solid #DCDCDC;
-	border-bottom: 1px solid #DCDCDC;
-	*/
 	background-color: #6681C3;
 	color: white; 
 }
@@ -142,10 +124,6 @@ table.grid tbody tr:hover td a,
 table.grid tbody tr.gearchiveerd:hover td a,
 table.grid tbody tr.even.gearchiveerd:hover td a
 {
-/*	background-color: white;
-	border-top: 1px solid #DCDCDC;
-	border-bottom: 1px solid #DCDCDC;
-	*/
 	color: white;
 	background-color: #6681C3;
 	text-decoration: underline; 

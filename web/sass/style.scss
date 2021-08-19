@@ -9,16 +9,6 @@ $font-awesome-version: "Font Awesome 5 Pro";
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-// Legacy
-@import "legacy/_reset";
-@import "legacy/_layout";
-@import "legacy/_main";
-@import "legacy/_admin_print";
-@import "legacy/_myTable";
-@import "legacy/_tabs";
-@import "legacy/_dialog";
-@import "legacy/_opvangplan";
-
 .new-ui {
   $primary-text-color: #1F2933;
 

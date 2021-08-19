@@ -223,25 +223,6 @@ h2 img{
   top: 7px;
 }
 
-/*
-h2.pageblock {
-	position: relative;
-  display: inline;
-  font-weight: bold;
-	font-size: 10px;
-	margin-bottom:1px;
-	color: #334F6B;
-	border: 1px solid #6FA9EC;
-	padding: 1px;
-	padding-left: 30px;
-	padding-right: 30px;
-	top: 4px;
-	background-color:#F5F9FF;
-	margin-left:10px;
-  z-index: 15;
-}
-*/
-
 h2.pageblock {
   font-weight: normal;
 	font-size: 11px;
@@ -314,13 +295,9 @@ div.pageactions {
 
 div.objectinfo {
 
-/*  top: -85px;
-  right: 10px;*/
   width: auto;
   background-color: white;
-  /*float:right;*/
   border: 1px solid gray;
-  /*opacity: 0.15;*/
 }
 
 div.objectinfo td,
@@ -356,7 +333,6 @@ table.formtable th
   padding-right: 10px;
   vertical-align: top;
   top: -1px;
-  /*padding-top: 2px;*/
   width: 150px;
 }
 
@@ -458,7 +434,6 @@ select.monospace option {
 }
 
 fieldset {
-  /* border: 1px solid #AACDF4; */
   border: 1px solid #DDD;
 	padding: 4px;
 	margin-top: 5px;
@@ -530,7 +505,6 @@ legend {
   padding-left: 6px;
   padding-right: 6px;
   margin-left:10px;
-/*	background: #ffffff;*/
 }
 
 fieldset.problemen legend {
@@ -634,7 +608,6 @@ div.menublock ul li:hover {
 
 div.maillist {
   margin-bottom: 30px;
-/*  border: 1px solid #919191;*/
 }
 
 div.maillist ul {
@@ -1077,14 +1050,6 @@ div.snelzoeken {
 	padding-top: 5px;
 	z-index: 900;
 }
-
-/*
-Waarschijnlijk nog wel nodig voor IE brol
-
-html,body {
-	height: 100%;
-}
-*/
 
 html {
 	padding: 0 0 25px 0;  /* create area for notification area */
