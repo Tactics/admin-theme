@@ -12,7 +12,6 @@ body, td, p
 {
   margin: 0px;
   padding: 0px;
-  font-family: Verdana, arial, helvetica, sans-serif;
 }
 
 @media print {
@@ -44,7 +43,6 @@ h1 {
 	padding:0;
 	font-size:20px;
 	font-weight:900;
-	color:#AEAEAE;
 }
 
 hr
@@ -347,7 +345,6 @@ form div.formitemhidable {
 }
 
 input, option, optgroup, select, textarea, button[type=submit] {
-  font-family: Verdana, arial, helvetica, sans-serif;
   font-weight: normal;
 }
 
@@ -387,7 +384,6 @@ input {
 
 a.button, a.button:hover {
 	border: 1px solid #000000;
-  font-family: Verdana, arial, helvetica, sans-serif;
   text-decoration: none;
 	color: black;
 	background-color: #F0F0F0;
@@ -409,7 +405,6 @@ option {
 
 select.monospace,
 select.monospace option {
-	font-family: Courier New, Courier, monospace;
 }
 
 fieldset {
@@ -720,83 +715,6 @@ div.icons fieldset.smalliconblock div.icon {
   margin-bottom: 10px;
 }
 
-/******* CONTEXT ACTIONS MENU *********/
-div.actionsmenu {
-  width: 170px;
-  padding: 3px;
-  padding-top: 2px;
-  margin-left: 15px;
-  padding-left: 5px;
-  border: 1px solid #666666;
-  background: #F7F7F7;
-}
-
-div.actionsmenu hr
-{
-  border: 0px;
-  border-top: 1px solid black;
-  margin-left: -5px;
-  margin-right: -5px;
-}
-
-table.twoColumnLayout td.fixedColumn div.actionsmenu {
-  width: auto;
-  padding: 3px;
-  padding-top: 2px;
-  margin-left: 0px;
-  padding-left: 5px;
-  margin-top: 12px;
-  border: 1px solid #666666;
-  background: #F7F7F7;
-}
-
-div.actionsmenu div.menuitem {
-  width: 100%;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  display: flex;
-}
-
-div.actionsmenu div.menuitem a{
-    display: inline-block;
-    width: 79%;
-    padding-left: 0.5em;
-}
-
-div.actionsmenu div.menuitem .disabled {
-	color: #888888;
-}
-
-div.actionsmenu img {
-  height: 16px;
-  width: 16px;
-  position: relative;
-}
-
-div.actionsmenu h1 {
-  font-size: 10px;
-  font-weight: bold;
-	color: black;
-	padding-bottom: 2px;
-	margin-top: 5px;
-	margin-bottom: -1px;
-    display: inline-block;
-    width: 79%;
-    border-bottom: 1px solid black;
-}
-
-div.actionsmenu .photo img
-{
-    width: 170px;
-    height: auto;
-    border-radius: 5px;
-}
-div.actionsmenu .photo
-{
-    text-align: center;
-
-    margin-bottom:10px;
-}
 div.contextmenu {
   margin-top: 10px;
 }
@@ -923,28 +841,6 @@ a.tabbutton img {
 	min-height: 32px;
 }
 
-/************* BREADCRUMB ***************/
-
-.breadcrumb {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-  margin-bottom: 6px;
-  border-bottom: 1px solid #888888;
-}
-
-.breadcrumb li {
-	display: inline;
-	padding: 0;
-	margin: 0;
-	color: #666;
-}
-
-/*.breadcrumb li:before { content: "> "; }
-.breadcrumb li:first-child:before { content: ""; }*/
-
-
-
 /************** BOOM ****************/
 
 
@@ -1024,7 +920,6 @@ div.snelzoeken {
 	display: block;
 	text-align: center;
 	font-size: 11px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 	padding-top: 5px;
 	z-index: 900;
 }
