@@ -33,27 +33,16 @@ thead { display: table-header-group; }
 tfoot { display: table-footer-group; }
 
 p {
-	margin:0px 0px 16px 0px;
-	padding:0px;
+	margin:0 0 16px 0;
+	padding:0;
 }
 
-a,
-a:hover,
-a:link,
-a:visited,
-a:active
-{
-	color:#0000EE;
-	text-decoration:none;
-}
-
-a:hover {text-decoration: underline;}
 a img,:link img,:visited img { border: none; }
 
 
 h1 {
-	margin:0px 0px 15px 0px;
-	padding:0px;
+	margin:0 0 15px 0;
+	padding:0;
 	font-size:20px;
 	font-weight:900;
 	color:#AEAEAE;
@@ -236,7 +225,7 @@ h2.pageblock.gearchiveerd {
 	color: #444444;
 	border: 1px solid #BBBBBB;
 	background-color:#FEFEFE;
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 
 h2.pageblock.kind {
