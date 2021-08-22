@@ -13,7 +13,6 @@ body, td, p
   margin: 0px;
   padding: 0px;
   font-family: Verdana, arial, helvetica, sans-serif;
-  font-size: 10px;
 }
 
 @media print {
@@ -208,7 +207,6 @@ h2 img{
 
 h2.pageblock {
   font-weight: normal;
-	font-size: 11px;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	margin-bottom:0px;
@@ -350,7 +348,6 @@ form div.formitemhidable {
 
 input, option, optgroup, select, textarea, button[type=submit] {
   font-family: Verdana, arial, helvetica, sans-serif;
-  font-size: 10px;
   font-weight: normal;
 }
 
@@ -413,7 +410,6 @@ option {
 select.monospace,
 select.monospace option {
 	font-family: Courier New, Courier, monospace;
-	font-size: 11px;
 }
 
 fieldset {
@@ -482,7 +478,6 @@ tr.problemen input {
 
 
 legend {
-	font-size: 11px;
   border: 0px solid #6FA9EC;
   padding: 2px;
   padding-left: 6px;

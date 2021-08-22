@@ -14,13 +14,13 @@ $font-awesome-version: "Font Awesome 5 Pro";
 
   font-family: 'Lato', sans-serif !important;
   padding-bottom: 0;
+  font-size: 12px;
 
   body, td, p {
     font-family: 'Lato', sans-serif !important;
     color: var(--primary-text-color, $primary-text-color) !important;
     background: none;
     padding-bottom: 0;
-    font-size: 11px;
   }
 
   body {
