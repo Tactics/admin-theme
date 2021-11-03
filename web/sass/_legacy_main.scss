@@ -1667,7 +1667,7 @@ div.regularisatie_behandeld {
 .dashboard-wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
+    max-width: 950px;
 }
 
 .dashboard-wrapper .dashboard-wrapper-inner {
@@ -1685,12 +1685,21 @@ div.regularisatie_behandeld {
 }
 
 .dashboard-wrapper .pageblock i {
-    font-size: 3em;
+    color: #404685;
+    font-size: 1.6em;
     padding: 5px;
-    margin-right: 0.5em;
-    color: #767676;
+    margin-right: .3em;
 }
 
 .mceStatusbar {
     text-indent: -9999px!important;
 }
+
+.new-ui .dashboard-wrapper div.pageblock {
+  padding: 20px 15px;
+}
+
+.new-ui .dashboard-wrapper h2.pageblock {
+  background: #FBFCFF;
+}
+
