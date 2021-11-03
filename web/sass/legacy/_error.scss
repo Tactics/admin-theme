@@ -1,0 +1,63 @@
+.m-page--headless .m-page--headless__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../images/background-min.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+}
+
+.m-page--headless .m-page--headless__container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 999;
+}
+
+.m-page--headless .m-page--headless__container--centered {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 600px;
+  left: calc(50% - 300px);
+}
+
+.m-http-error {
+  text-align: center;
+}
+
+.m-http-error h1,
+.m-http-error h2,
+.m-http-error div {
+  color: #FFF;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.m-http-error h1 {
+  font-size: 240px;
+  z-index: 999999;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+}
+
+.m-http-error .button {
+  background-color: #1cd4d4;
+  box-shadow: rgba(35,228,222,.3) 0 4px 7px;
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 15px 18px;
+  color: #FFF;
+}
+
+.m-http-error .button:hover {
+  background-color: #19bdbd;
+  padding: 15px 18px;
+  color: #FFF;
+}
