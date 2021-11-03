@@ -24,17 +24,17 @@
 
 .ttBase-dialog-modal.confirm h2
 {
-  background-image:url(../../images/help_32.gif);
+  background-image:url(../images/help_32.gif);
 }
 
 .ttBase-dialog-modal.error h2
 {
-  background-image:url(../../images/close_32.gif);
+  background-image:url(../images/close_32.gif);
 }
 
 .ttBase-dialog-modal.prompt h2
 {
-  background-image:url(../../images/help_32.gif);
+  background-image:url(../images/help_32.gif);
 }
 
 .ttBase-dialog-modal p
@@ -75,7 +75,7 @@
  
 /* close button positioned on upper right corner */ 
 .ttBase-window .close { 
-  background-image:url(../../images/dialog-close.png);
+  background-image:url(../images/dialog-close.png);
   position:absolute; 
   right:-15px; 
   top:-15px; 

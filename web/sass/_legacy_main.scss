@@ -83,7 +83,7 @@ img.icon
   padding-right: 10px;
   margin-right: 8px;
   background-color: white;
-  background-image: url(../../images/_icon_bg.png);
+  background-image: url(../images/_icon_bg.png);
   float:left;
 }
 
@@ -358,7 +358,7 @@ input[type=image] {
 }
 
 button.searchImage, input[type=button].searchImage, input[type=submit].searchImage {
-  background: #F0F0F0 url('../../images/zoom_16.gif') no-repeat 1px center;
+  background: #F0F0F0 url('../images/zoom_16.gif') no-repeat 1px center;
   padding-left: 17px;
 }
 
@@ -1303,7 +1303,7 @@ input.disabled
 /**********************/
 .indicator
 {
-  background-image: url('../../images/indicator.gif');
+  background-image: url('../images/indicator.gif');
   background-position:left top;
   background-repeat:no-repeat;
   height:20px;

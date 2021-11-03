@@ -15,7 +15,7 @@ ul.tt-tabs li {
   padding-left: 10px;
 	margin:0 !important;
 	list-style-image:none !important; 
-	background: transparent url(/ttBase/ui/images/tabs_sprite_1.png) no-repeat scroll 0 0;
+	background: transparent url(../images/tabs_sprite_1.png) no-repeat scroll 0 0;
   position:relative;
   top: 1px;
   border-bottom: 1px solid #888;
@@ -24,7 +24,7 @@ ul.tt-tabs li {
 /* link inside the tab. uses a background image */
 ul.tt-tabs a { 
 	float:left;
-	background: white url(/ttBase/ui/images/tabs_sprite_1.png) no-repeat scroll 100% 0;
+	background: white url(../images/tabs_sprite_1.png) no-repeat scroll 100% 0;
 	display:block;
 	height: 25px;  
 	line-height:25px;
