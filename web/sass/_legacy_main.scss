@@ -1,19 +1,5 @@
 /*********** DEFAULT STYLES ************/
 
-h1,h2,h3,h4,h5,h6,pre,form,body,html,p,fieldset,input
-{ margin: 0; padding: 0; }
-
-ul, ol {
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-body, td, p
-{
-  margin: 0px;
-  padding: 0px;
-}
-
 @media print {
     #verberg-favorieten-menu{
         display: none;
@@ -30,20 +16,7 @@ body, td, p
 thead { display: table-header-group; }
 tfoot { display: table-footer-group; }
 
-p {
-	margin:0 0 16px 0;
-	padding:0;
-}
-
 a img,:link img,:visited img { border: none; }
-
-
-h1 {
-	margin:0 0 15px 0;
-	padding:0;
-	font-size:20px;
-	font-weight:900;
-}
 
 hr
 {
@@ -194,7 +167,6 @@ div.pageactions {
 
 
 h2 {
-  font-size:14px;
   margin-bottom: 7px;
 }
 
@@ -208,12 +180,9 @@ h2.pageblock {
 	padding-top: 2px;
 	padding-bottom: 2px;
 	margin-bottom:0px;
-	color: #072655;
 	padding-left: 7px;
-	border: 1px solid #7A8FAD;
 	border-bottom: 0px;
-	background-color:#D6E1F0;
-  z-index: 15; /* Moet hoger zijn dan de z-index van de overlay om divs te disablen */
+    z-index: 15; /* Moet hoger zijn dan de z-index van de overlay om divs te disablen */
 }
 
 
@@ -369,13 +338,6 @@ div.buttongroup {
 input, textarea, select {
 	border: 1px solid #888888;
 }
-
-input:focus, textarea:focus, select:focus
-{
-	border: 1px solid black;
-	background-color: #FEFBF7;
-}
-
 
 input {
  	padding-left: 3px;
@@ -682,76 +644,6 @@ div.icons fieldset.iconblock > label {
 	z-index: 1;
 }
 
-/** depreciated: moet verwijderd worden **/
-div.icons div.iconblock h2 {
-  display: inline;
-  clear: both;
-	color: black;
-	margin-bottom:1px;
-	padding: 2px;
-	padding-left: 8px;
-	padding-right: 8px;
-	position: relative;
-	top: -14px;
-	background-color:#FFFFFF;
-	margin-left:10px;
-	z-index: 1;
-}
-
-div.icons fieldset.smalliconblock {
-  width: 100px;
-  border: none;
-}
-
-div.icons fieldset.smalliconblock div.icon a {
-	font-size: 9px;
-}
-
-
-div.icons fieldset.smalliconblock div.icon {
-  text-align: center;
-  width: 50px;
-  float: left;
-  margin-bottom: 10px;
-}
-
-div.contextmenu {
-  margin-top: 10px;
-}
-
-div.contextmenu span.contextlink {
-  border: 1px solid #888888;
-  vertical-align: middle;
-  cursor: pointer;
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-	margin-right: 8px;
-	background-color: #D4D0C8;
-}
-
-div.contextmenu span.contextlink a {
- 	color: black;
-	font-weight: normal;
-}
-
-div.contextmenu span.contextlink:hover {
-	background-color: #FDDAB7;
-}
-
-div.contextmenu span.contextlink a:hover {
-  text-decoration: none;
-}
-
-div.contextmenu span.contextlink img {
-  width: 12px;
-  height: 12px;
-  vertical-align: middle;
-  position:relative;
-  top: -2px;
-}
-
 /********* IMAGE_CHECKBOX ********/
 
 div.img_checkbox_checked a{
@@ -895,7 +787,6 @@ table.objectdetails th {
 table.objectdetails tr,
 table.objectdetails td {
   vertical-align: top;
-  font-weight: noram;
 }
 
 
