@@ -9,7 +9,9 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "move": "cp web/css/style.css ./../../web/adminTheme/css/style.css"
+    "move": "cp web/css/style.css ./../../web/adminTheme/css/style.css",
+    "build": "./node_modules/.bin/gulp sass",
+    "watch": "./node_modules/.bin/gulp watch"
   },
   "dependencies": {
     "caniuse-lite": "^1.0.30001251"
