@@ -2,7 +2,6 @@ div.actionsmenu {
   background-color: #fff;
   border-radius: 5px;
   padding: 9px;
-  font-size: 11px;
   right: 9px;
   border: none;
   margin-left: 10px;
@@ -15,10 +14,9 @@ div.actionsmenu {
     padding-left: 9px;
     padding-right: 9px;
     color: #767676;
-    font-weight: normal;
     width: 100%;
-    font-size: 11px;
   }
+
   h1:first-of-type {
     margin-top: 0;
   }
@@ -33,7 +31,6 @@ div.actionsmenu {
     margin-bottom: 8px;
     padding-left: 17px;
     position: relative;
-    height: 14px;
     width: 100%;
     display: flex;
     &:last-of-type {
@@ -47,12 +44,12 @@ div.actionsmenu {
       overflow-y: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      line-height: 1.2;
     }
 
     > i {
       position: absolute;
       left: 0;
+      line-height: 1.8;
     }
 
     &--danger {
