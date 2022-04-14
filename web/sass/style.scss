@@ -11,13 +11,10 @@ $font-awesome-version: "Font Awesome 5 Pro";
 
 .new-ui {
   $primary-text-color: #1F2933;
-
-  font-family: 'Lato', sans-serif !important;
   padding-bottom: 0;
   font-size: 12px;
 
   body, td, p {
-    font-family: 'Lato', sans-serif !important;
     color: var(--primary-text-color, $primary-text-color) !important;
     background: none;
     padding-bottom: 0;
@@ -118,17 +115,11 @@ $font-awesome-version: "Font Awesome 5 Pro";
         width: 100% !important;
     }
 
-  @import "header";
-
   @import "pageblock";
 
   @import "forms";
 
   @import "actionmenu";
-
-  @import "breadcrumb";
-
-  @import "globalsearch";
 
   @import "usermenu";
 
@@ -142,10 +133,6 @@ $font-awesome-version: "Font Awesome 5 Pro";
 
   @import "status";
 
-  @import "dashboardmenu";
-
-  @import "footer";
-
   @import 'tabs';
 
   @import "datepicker";
@@ -153,10 +140,6 @@ $font-awesome-version: "Font Awesome 5 Pro";
   @import "logincontainer";
 
   @import "tt-modal";
-
-  @import "system-requirements";
-
-  @import "system-information";
 
   @import "card";
 }
