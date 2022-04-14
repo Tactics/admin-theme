@@ -1,12 +1,10 @@
 button, input[type="submit"], input[type="button"], .button {
-  font-family: 'Lato', sans-serif !important;
   padding: 7px 9px;
   border:none;
   border-radius: 5px;
   margin-right: 5px;
   cursor: pointer;
   color: #1F2933;
-    font-size: 11px;
 
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -144,9 +142,4 @@ select {
 span.toggleableMultipleSelect {
     display: flex;
     align-items: center;
-}
-
-// SearchImage op zoekknop
-button.searchImage, input[type="button"].searchImage, input[type="submit"].searchImage {
-  background-image: none;
 }

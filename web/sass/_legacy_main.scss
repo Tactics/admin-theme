@@ -294,14 +294,8 @@ table.formtable th.error
   color: red;
 }
 
-table.formtable tr.required th
-{
-  font-weight: bold;
-}
-
 table.formtable .readonly
 {
-  font-weight: bold;
   display:inline
 }
 
@@ -327,7 +321,6 @@ input[type=image] {
 }
 
 button.searchImage, input[type=button].searchImage, input[type=submit].searchImage {
-  background: #F0F0F0 url('../images/zoom_16.gif') no-repeat 1px center;
   padding-left: 17px;
 }
 
