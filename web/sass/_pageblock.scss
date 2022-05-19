@@ -53,9 +53,11 @@ div.pageblock {
 
 }
 
-div.pageblock.js--menuitem {
-  a {
-    font-size: 14px;
+div.dashboard-item {
+  div.pageblock {
+    a {
+      font-size: 14px;
+    }
   }
 }
 
