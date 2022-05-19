@@ -6,6 +6,11 @@ div.actionsmenu {
   border: none;
   margin-left: 10px;
   width: 200px;
+  box-shadow: rgba(39,51,68,.1) 0 4px 7px;
+
+  .photo img {
+    width: 200px;
+  }
 
   h1 {
     border: none;
@@ -43,9 +48,6 @@ div.actionsmenu {
     a {
       width: 78%;
       overflow-x: hidden;
-      overflow-y: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
     }
 
     > i {
