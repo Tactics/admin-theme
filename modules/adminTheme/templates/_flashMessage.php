@@ -1,4 +1,4 @@
-<div class="flash-alert">
+<div class="flash-alert <?php echo $type ?>">
     <div class="flash-alert__content">
         <?php echo $message; ?>
     </div>
@@ -16,4 +16,17 @@
         );
     });
 
+    function remove() {
+        flashmessages = document.querySelectorAll('.flash-alert');
+        flashmessages.forEach(element => {
+            element.classList.add('remove');
+        });
+        setTimeout(function() {
+            flashmessages.forEach(element => {
+                element.remove();
+            });
+        }, 450)
+    }
+
+    // setTimeout(remove, 5000);
 </script>
