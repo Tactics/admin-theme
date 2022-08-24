@@ -48,7 +48,63 @@
             cursor: pointer;
         }
     }
+    animation-name: enter;
+    animation-duration: 500ms;
 }
 
+.flash-alert.flash_warning {
+  background-color: #ffe3e3;
+  color: #610316;
+}
 
+.flash-alert.flash_bericht {
+  background-color: #ffffe3;
+  color: #615003;
+}
 
+.flash-alert.flash_confirmation {
+  background-color: #e3ffe3;
+  color: #306103;
+}
+
+.flash-alert.remove {
+  animation-name: remove;
+  animation-duration: 500ms;
+}
+
+#flash-message-container {
+    /* position: absolute;
+    top: 110px;
+    z-index: 10;
+    width: 91% */
+    width: 99%;
+}
+
+/* z-index on header, so flash message slides out from underneath header */
+.l-header {
+  z-index: 11;
+}
+
+@keyframes enter {
+  from {
+      transform: translateY(-400%);
+      opacity: 0;
+  }
+
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes remove {
+  from {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+  to {
+      transform: translateY(-400%);
+      opacity: 0;
+  }
+}
